@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d13958d8-fbfa-48e0-8ec2-68743b804e81}">
+		<property name="assetPath">
+			<value>Strawberry Rush Draft 1 7-Grand Piano Piano Harp Time.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>22.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c4d73c4f-68f7-4134-8cc4-f0b3d90b6d4d}</destination>
+		</relationship>
+	</object>
+</objects>
