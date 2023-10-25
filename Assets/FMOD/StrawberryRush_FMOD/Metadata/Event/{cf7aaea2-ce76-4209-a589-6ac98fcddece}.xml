@@ -385,6 +385,7 @@
 		<property name="length">
 			<value>2.5</value>
 		</property>
+		<property name="name" />
 		<property name="commandType">
 			<value>3</value>
 		</property>
