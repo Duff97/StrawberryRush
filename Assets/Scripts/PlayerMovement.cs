@@ -10,15 +10,23 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GroundDetector groundDetector;
 
     private Rigidbody rb;
+    private bool isInGame = false;
+    private Vector3 startPosition;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        startPosition = transform.position;
+        GameManager.OnGameStarted += HandleGameStarted;
+        GameManager.OnGameFinished += HandleGameFinished;
     }
 
     private void FixedUpdate()
     {
+
+        if (!isInGame) return;
+
         rb.velocity = new Vector3 (velocity, rb.velocity.y);
 
         if (!groundDetector.isGrounded() || !Input.GetKey(jumpKey)) return;
@@ -32,4 +40,21 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector3(velocity, jumpVelocity);
     }
 
+    private void HandleGameStarted()
+    {
+        transform.position = startPosition;
+        isInGame = true;
+    }
+
+    private void HandleGameFinished()
+    {
+        rb.velocity = Vector3.zero;
+        isInGame = false;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.OnGameStarted -= HandleGameStarted;
+        GameManager.OnGameStarted -= HandleGameFinished;
+    }
 }
