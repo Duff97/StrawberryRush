@@ -5,17 +5,18 @@ using UnityEngine;
 
 public class GroundDetector : MonoBehaviour
 {
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float detectionDistance;
 
-    public static event Action OnGroundEntered;
-    public static event Action OnGroundExited;
+    private bool groundDetected = false;
 
-    private void OnTriggerEnter(Collider other)
+    private void FixedUpdate()
     {
-        OnGroundEntered?.Invoke();
+        groundDetected = Physics.Raycast(transform.position, Vector3.down, detectionDistance);
     }
 
-    private void OnTriggerExit(Collider other)
+    public bool isGrounded()
     {
-        OnGroundExited?.Invoke();
+        return groundDetected;
     }
 }
