@@ -59,6 +59,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 47500
+--- !u!114 &-3386086789193414035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Click
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Click
+  Guid:
+    Data1: 195076650
+    Data2: 1078320167
+    Data3: 1897693363
+    Data4: -587497447
+  Banks:
+  - {fileID: -2163181220096113297}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 646
 --- !u!114 &-2163181220096113297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,10 +101,10 @@ MonoBehaviour:
   Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Game Music.bank
   Name: Game Music
   StudioPath: bank:/Game Music
-  lastModified: 638338621540477736
+  lastModified: 638338737405720756
   FileSizes:
   - Name: Desktop
-    Value: 1732512
+    Value: 1736768
   Exists: 1
 --- !u!114 &-2157840158304560249
 MonoBehaviour:
@@ -125,7 +152,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 1
-  Default: 1
+  Default: 0
   ID:
     data1: 3949145717
     data2: 2953957690
@@ -184,13 +211,14 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: -3593463022504541674}
   - {fileID: 2224307821826322071}
+  - {fileID: -3386086789193414035}
   EditorParameters:
   - {fileID: -5447701612350994384}
   MasterBanks:
   - {fileID: 6442534539062769904}
   StringsBanks:
   - {fileID: 754540649295285727}
-  cacheTime: 638338621540523195
+  cacheTime: 638338737405756639
   cacheVersion: 131608
 --- !u!114 &754540649295285727
 MonoBehaviour:
@@ -207,10 +235,10 @@ MonoBehaviour:
   Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638338621540523195
+  lastModified: 638338737405756639
   FileSizes:
   - Name: Desktop
-    Value: 984
+    Value: 1024
   Exists: 1
 --- !u!114 &2224307821826322071
 MonoBehaviour:
@@ -255,7 +283,7 @@ MonoBehaviour:
   Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638338621540497942
+  lastModified: 638338737405746508
   FileSizes:
   - Name: Desktop
     Value: 1256
