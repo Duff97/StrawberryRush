@@ -2078,8 +2078,6 @@ MonoBehaviour:
   Params:
   - Name: Game State
     Value: 1
-  - Name: Collision
-    Value: 1
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
@@ -2104,7 +2102,7 @@ MonoBehaviour:
       Data4: 860444424
     Path: event:/Notes/Note Collect
   Event: 
-  PlayEvent: 3
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0

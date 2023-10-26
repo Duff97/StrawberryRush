@@ -74,10 +74,10 @@ MonoBehaviour:
   Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Game Music.bank
   Name: Game Music
   StudioPath: bank:/Game Music
-  lastModified: 638338238250080688
+  lastModified: 638338621540477736
   FileSizes:
   - Name: Desktop
-    Value: 1731520
+    Value: 1732512
   Exists: 1
 --- !u!114 &-2157840158304560249
 MonoBehaviour:
@@ -190,7 +190,7 @@ MonoBehaviour:
   - {fileID: 6442534539062769904}
   StringsBanks:
   - {fileID: 754540649295285727}
-  cacheTime: 638338238250120923
+  cacheTime: 638338621540523195
   cacheVersion: 131608
 --- !u!114 &754540649295285727
 MonoBehaviour:
@@ -207,7 +207,7 @@ MonoBehaviour:
   Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638338238250120923
+  lastModified: 638338621540523195
   FileSizes:
   - Name: Desktop
     Value: 984
@@ -239,7 +239,7 @@ MonoBehaviour:
   - {fileID: -2157840158304560249}
   MinDistance: 1
   MaxDistance: 20
-  Length: 2500
+  Length: 125
 --- !u!114 &6442534539062769904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,7 +255,7 @@ MonoBehaviour:
   Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638338238250110947
+  lastModified: 638338621540497942
   FileSizes:
   - Name: Desktop
     Value: 1256
