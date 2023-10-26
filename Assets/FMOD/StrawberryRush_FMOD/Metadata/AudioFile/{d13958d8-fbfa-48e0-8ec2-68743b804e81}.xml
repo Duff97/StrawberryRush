@@ -4,9 +4,6 @@
 		<property name="assetPath">
 			<value>Strawberry Rush Draft 1 7-Grand Piano Piano Harp Time.wav</value>
 		</property>
-		<property name="isStreaming">
-			<value>true</value>
-		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>
