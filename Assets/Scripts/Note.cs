@@ -6,6 +6,12 @@ public class Note : MonoBehaviour
 {
     //Declaring FMOD variable.
     private FMOD.Studio.EventInstance melody;
+
+    private void Start()
+    {
+        GameManager.OnGameStarted += HandleGameStart;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         //Setting FMOD variable to an FMOD event. Will start and immediately release the event.
@@ -13,6 +19,11 @@ public class Note : MonoBehaviour
         melody.start();
         melody.release();
         
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+    }
+
+    private void HandleGameStart()
+    {
+        gameObject.SetActive(true);
     }
 }

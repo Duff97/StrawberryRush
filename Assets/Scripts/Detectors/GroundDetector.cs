@@ -12,7 +12,7 @@ public class GroundDetector : MonoBehaviour
 
     private void FixedUpdate()
     {
-        groundDetected = Physics.Raycast(transform.position, Vector3.down, detectionDistance);
+        groundDetected = Physics.Raycast(transform.position, Vector3.down, detectionDistance, groundLayer);
     }
 
     public bool isGrounded()

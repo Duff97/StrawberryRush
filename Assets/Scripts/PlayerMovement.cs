@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpVelocity;
     [SerializeField] private KeyCode jumpKey;
     [SerializeField] private GroundDetector groundDetector;
+    [SerializeField] private ConstantForce gravity;
 
     private Rigidbody rb;
     private bool isInGame = false;
@@ -42,12 +43,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleGameStarted()
     {
+        gravity.enabled = true;
         transform.position = startPosition;
         isInGame = true;
     }
 
     private void HandleGameFinished()
     {
+        gravity.enabled = false;
         rb.velocity = Vector3.zero;
         isInGame = false;
     }

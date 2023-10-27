@@ -11,6 +11,13 @@ public class GameManager : MonoBehaviour
     public static event Action OnGameStarted;
     public static event Action OnGameFinished;
 
+    private void Start()
+    {
+        FallDetector.OnFallDetected += EndGame;
+        WallDetector.OnWallDetected += EndGame;
+        FinishLineDetector.OnFinishLinePassed += EndGame;
+    }
+
     public void StartGame()
     {
         menuPanel.SetActive(false);
