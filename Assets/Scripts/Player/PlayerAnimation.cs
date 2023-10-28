@@ -27,4 +27,5 @@ public class PlayerAnimation : MonoBehaviour
     {
         PlayerMovement.OnPlayerJump -= HandlePlayerJump;
     }
+
 }

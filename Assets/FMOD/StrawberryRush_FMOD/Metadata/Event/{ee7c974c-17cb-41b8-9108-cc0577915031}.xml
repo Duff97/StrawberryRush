@@ -125,6 +125,9 @@
 		<property name="isAsync">
 			<value>true</value>
 		</property>
+		<property name="volume">
+			<value>-25</value>
+		</property>
 		<relationship name="modulators">
 			<destination>{d8e763a8-c9aa-47dc-adf3-ec7eac55eb38}</destination>
 		</relationship>
