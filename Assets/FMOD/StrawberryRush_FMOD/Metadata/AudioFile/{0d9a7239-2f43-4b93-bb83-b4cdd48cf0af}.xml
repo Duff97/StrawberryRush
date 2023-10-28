@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0d9a7239-2f43-4b93-bb83-b4cdd48cf0af}">
+		<property name="assetPath">
+			<value>StrawberryRushNote-Gb5.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c4d73c4f-68f7-4134-8cc4-f0b3d90b6d4d}</destination>
+		</relationship>
+	</object>
+</objects>

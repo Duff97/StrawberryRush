@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6206710054896607891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Main Scene.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Main Scene.bank
+  Name: Main Scene
+  StudioPath: bank:/Main Scene
+  lastModified: 638340466520148746
+  FileSizes:
+  - Name: Desktop
+    Value: 2660736
+  Exists: 1
 --- !u!114 &-5447701612350994384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,16 +69,61 @@ MonoBehaviour:
     Data3: -915764827
     Data4: -824259185
   Banks:
-  - {fileID: -2163181220096113297}
+  - {fileID: -6206710054896607891}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
   - {fileID: -1320470023492125393}
   - {fileID: -692542977501781839}
+  - {fileID: 5637257478620456099}
+  - {fileID: 5627228920692592295}
   MinDistance: 1
   MaxDistance: 20
   Length: 47500
+--- !u!114 &-3554725448204050196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
 --- !u!114 &-3386086789193414035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,34 +143,14 @@ MonoBehaviour:
     Data3: 1897693363
     Data4: -587497447
   Banks:
-  - {fileID: -2163181220096113297}
+  - {fileID: -6206710054896607891}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 646
---- !u!114 &-2163181220096113297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Game Music.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Game Music.bank
-  Name: Game Music
-  StudioPath: bank:/Game Music
-  lastModified: 638339044293977683
-  FileSizes:
-  - Name: Desktop
-    Value: 1736768
-  Exists: 1
+  Length: 0
 --- !u!114 &-2157840158304560249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,7 +196,7 @@ MonoBehaviour:
   Name: Game State
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 3
   Default: 0
   ID:
     data1: 3949145717
@@ -161,6 +206,8 @@ MonoBehaviour:
   Labels:
   - Main Menu
   - In Game
+  - Death
+  - Victory
   Exists: 1
 --- !u!114 &-692542977501781839
 MonoBehaviour:
@@ -192,6 +239,33 @@ MonoBehaviour:
   - Ab
   - Co
   Exists: 1
+--- !u!114 &-535984701788276747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Footsteps
+  Guid:
+    Data1: -293824692
+    Data2: 1102583755
+    Data3: 97257617
+    Data4: 827363703
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,18 +281,21 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 754540649295285727}
   - {fileID: 6442534539062769904}
-  - {fileID: -2163181220096113297}
+  - {fileID: -6206710054896607891}
   EditorEvents:
   - {fileID: -3593463022504541674}
   - {fileID: 2224307821826322071}
   - {fileID: -3386086789193414035}
+  - {fileID: -535984701788276747}
+  - {fileID: 1948165817525978747}
   EditorParameters:
   - {fileID: -5447701612350994384}
+  - {fileID: 5598795095949235303}
   MasterBanks:
   - {fileID: 6442534539062769904}
   StringsBanks:
   - {fileID: 754540649295285727}
-  cacheTime: 638339044294012729
+  cacheTime: 638340466520199492
   cacheVersion: 131608
 --- !u!114 &754540649295285727
 MonoBehaviour:
@@ -235,11 +312,38 @@ MonoBehaviour:
   Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638339044294012729
+  lastModified: 638340466520199492
   FileSizes:
   - Name: Desktop
-    Value: 1024
+    Value: 1244
   Exists: 1
+--- !u!114 &1948165817525978747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Jump
+  Guid:
+    Data1: -1282859302
+    Data2: 1215458123
+    Data3: -48475206
+    Data4: -1690402367
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &2224307821826322071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,15 +363,134 @@ MonoBehaviour:
     Data3: 1067556005
     Data4: 860444424
   Banks:
-  - {fileID: -2163181220096113297}
+  - {fileID: -6206710054896607891}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
   - {fileID: -2157840158304560249}
+  - {fileID: -3554725448204050196}
   MinDistance: 1
   MaxDistance: 20
-  Length: 125
+  Length: 145
+--- !u!114 &5598795095949235303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: parameter:/Melody Note
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &5627228920692592295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Game Music/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &5637257478620456099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Game Music/Path
+  m_EditorClassIdentifier: 
+  Name: Path
+  StudioPath: 
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 2555720422
+    data2: 1056158329
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Path A
+  - Path B
+  - Path C
+  - Path D
+  - Path E
+  - Path F
+  - Path G
+  - Path H
+  Exists: 1
 --- !u!114 &6442534539062769904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,8 +506,8 @@ MonoBehaviour:
   Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638339044294002763
+  lastModified: 638340466520183764
   FileSizes:
   - Name: Desktop
-    Value: 1256
+    Value: 1542
   Exists: 1
