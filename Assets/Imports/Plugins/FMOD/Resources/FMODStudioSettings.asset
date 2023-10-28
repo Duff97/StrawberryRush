@@ -451,7 +451,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - Game Music
+  - Main Scene
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

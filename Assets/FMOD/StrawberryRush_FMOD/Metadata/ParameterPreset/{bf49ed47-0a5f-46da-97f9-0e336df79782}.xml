@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{bf49ed47-0a5f-46da-97f9-0e336df79782}">
+		<property name="name">
+			<value>Path</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c15c7a2b-513a-4b57-82a7-b55486cb4108}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{df5228ee-945c-4092-96a8-093ef7381c6b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{df5228ee-945c-4092-96a8-093ef7381c6b}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>8</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Path A</value>
+			<value>Path B</value>
+			<value>Path C</value>
+			<value>Path D</value>
+			<value>Path E</value>
+			<value>Path F</value>
+			<value>Path G</value>
+			<value>Path H</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
