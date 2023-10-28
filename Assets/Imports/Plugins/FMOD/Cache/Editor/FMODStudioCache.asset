@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6206710054896607891
+--- !u!114 &-9218636144641788081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,18 +9,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Main Scene.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/Ab5 - Note Collect
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Main Scene.bank
-  Name: Main Scene
-  StudioPath: bank:/Main Scene
-  lastModified: 638340466520148746
-  FileSizes:
-  - Name: Desktop
-    Value: 2660736
-  Exists: 1
---- !u!114 &-5447701612350994384
+  Path: event:/Notes/Ab5 - Note Collect
+  Guid:
+    Data1: 492127670
+    Data2: 1223226199
+    Data3: -1574668654
+    Data4: 1223466244
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1730593146378210921}
+  - {fileID: -1309696626310239726}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &-8752383594275897958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30,10 +39,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Chord Root
+  m_Name: parameter:/Gb5 - Note Collect/Chord Root
   m_EditorClassIdentifier: 
   Name: Chord Root
-  StudioPath: parameter:/Chord Root
+  StudioPath: 
   Min: 0
   Max: 5
   Default: 0
@@ -50,38 +59,7 @@ MonoBehaviour:
   - Ab
   - Co
   Exists: 1
---- !u!114 &-3593463022504541674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Game Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Game Music
-  Guid:
-    Data1: -814043486
-    Data2: 1107938934
-    Data3: -915764827
-    Data4: -824259185
-  Banks:
-  - {fileID: -6206710054896607891}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -1320470023492125393}
-  - {fileID: -692542977501781839}
-  - {fileID: 5637257478620456099}
-  - {fileID: 5627228920692592295}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 47500
---- !u!114 &-3554725448204050196
+--- !u!114 &-8362302395552760826
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,7 +69,174 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Note Collect/Melody Note
+  m_Name: parameter:/C5 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &-8070606835666024880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/A5 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/A5 - Note Collect
+  Guid:
+    Data1: 901197595
+    Data2: 1113640011
+    Data3: -775803991
+    Data4: 84863021
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -7389888334152751098}
+  - {fileID: 3034076571453269834}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &-7733571637737338945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/B4 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/B4 - Note Collect
+  Guid:
+    Data1: 573301560
+    Data2: 1243039730
+    Data3: 124580241
+    Data4: 713274250
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4964245332519920121}
+  - {fileID: 8499523742378840375}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &-7650317105523865946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/C4 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/C4 - Note Collect
+  Guid:
+    Data1: -1329105613
+    Data2: 1137528769
+    Data3: -2073880943
+    Data4: 1547256788
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4531832814298088466}
+  - {fileID: -3954970108677288290}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &-7389888334152751098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/A5 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &-6206710054896607891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Main Scene.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Main Scene.bank
+  Name: Main Scene
+  StudioPath: bank:/Main Scene
+  lastModified: 638341055580427098
+  FileSizes:
+  - Name: Desktop
+    Value: 2689952
+  Exists: 1
+--- !u!114 &-5965132761664185310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/C6 - Note Collect/Melody Note
   m_EditorClassIdentifier: 
   Name: Melody Note
   StudioPath: 
@@ -124,6 +269,253 @@ MonoBehaviour:
   - B5
   - C6
   Exists: 1
+--- !u!114 &-5447701612350994384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: parameter:/Chord Root
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &-5167349116932112047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/A4 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &-4964245332519920121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/B4 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &-4768985936550639855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/Gb4 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/Gb4 - Note Collect
+  Guid:
+    Data1: -422040667
+    Data2: 1271350127
+    Data3: -873354077
+    Data4: -724105653
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5686904327563510637}
+  - {fileID: 4820959758204167663}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &-4251647218517140686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Eb4 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &-3954970108677288290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/C4 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &-3593463022504541674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Game Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Game Music
+  Guid:
+    Data1: -814043486
+    Data2: 1107938934
+    Data3: -915764827
+    Data4: -824259185
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1320470023492125393}
+  - {fileID: -692542977501781839}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 47500
 --- !u!114 &-3386086789193414035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,7 +543,94 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-2157840158304560249
+--- !u!114 &-3311616697420002765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/Bb5 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/Bb5 - Note Collect
+  Guid:
+    Data1: 1160897782
+    Data2: 1273712869
+    Data3: 1150603908
+    Data4: 1473236992
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2480877571483987951}
+  - {fileID: 5762025107235284593}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &-2925691690183186489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/Gb5 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/Gb5 - Note Collect
+  Guid:
+    Data1: -256898549
+    Data2: 1074430794
+    Data3: -610108009
+    Data4: -1672658072
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8752383594275897958}
+  - {fileID: 6818855327667479177}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &-2835383507107084826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/Eb4 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/Eb4 - Note Collect
+  Guid:
+    Data1: -849930336
+    Data2: 1082674183
+    Data3: -1130249312
+    Data4: 2112856336
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -17275579456135840}
+  - {fileID: -4251647218517140686}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &-2741869513391761705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,26 +640,298 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Note Collect/Chord Root
+  m_Name: parameter:/D5 - Note Collect/Melody Note
   m_EditorClassIdentifier: 
-  Name: Chord Root
+  Name: Melody Note
   StudioPath: 
   Min: 0
-  Max: 5
+  Max: 18
   Default: 0
   ID:
-    data1: 2722392804
-    data2: 4092092959
+    data1: 3691980062
+    data2: 4265620352
   Type: 2
   IsGlobal: 1
   Labels:
-  - G
-  - C
-  - F
-  - Bb
-  - Ab
-  - Co
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
   Exists: 1
+--- !u!114 &-2738546696943054223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bb4 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &-2480877571483987951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bb5 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &-2451169997654543415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/C5 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &-2238768285517260216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/B5 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/B5 - Note Collect
+  Guid:
+    Data1: -615666199
+    Data2: 1156920239
+    Data3: -406888292
+    Data4: 1208221353
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 6266212489730728882}
+  - {fileID: 5605576307812399494}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &-1983177207487231276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/Bb4 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/Bb4 - Note Collect
+  Guid:
+    Data1: 364538128
+    Data2: 1315985644
+    Data3: -1851960685
+    Data4: 1411586866
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 6577245594368052832}
+  - {fileID: -2738546696943054223}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &-1827353364884090772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/G5 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &-1754488597978339154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/A4 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/A4 - Note Collect
+  Guid:
+    Data1: -1423124520
+    Data2: 1208352645
+    Data3: 1067556005
+    Data4: 860444424
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2452495805515586504}
+  - {fileID: -5167349116932112047}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
 --- !u!114 &-1320470023492125393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,6 +959,136 @@ MonoBehaviour:
   - In Game
   - Death
   - Victory
+  Exists: 1
+--- !u!114 &-1309696626310239726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ab5 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &-1242349223078427087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Eb5 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &-1204322780868820887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Game Over
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Game Over
+  Guid:
+    Data1: 723236728
+    Data2: 1247352088
+    Data3: 1988136088
+    Data4: -1322241497
+  Banks:
+  - {fileID: 6442534539062769904}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-1001012254162043322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/C6 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
   Exists: 1
 --- !u!114 &-692542977501781839
 MonoBehaviour:
@@ -239,6 +1120,49 @@ MonoBehaviour:
   - Ab
   - Co
   Exists: 1
+--- !u!114 &-671509896060281453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ab4 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
 --- !u!114 &-535984701788276747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +1190,36 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-17275579456135840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Eb4 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,10 +1238,30 @@ MonoBehaviour:
   - {fileID: -6206710054896607891}
   EditorEvents:
   - {fileID: -3593463022504541674}
-  - {fileID: 2224307821826322071}
   - {fileID: -3386086789193414035}
   - {fileID: -535984701788276747}
   - {fileID: 1948165817525978747}
+  - {fileID: 8826939250949682398}
+  - {fileID: -2925691690183186489}
+  - {fileID: -1983177207487231276}
+  - {fileID: -8070606835666024880}
+  - {fileID: -7650317105523865946}
+  - {fileID: -7733571637737338945}
+  - {fileID: 2366282148024485281}
+  - {fileID: 8713075631300406579}
+  - {fileID: 6689263111513839570}
+  - {fileID: 5679064687802603379}
+  - {fileID: 7206265926794116027}
+  - {fileID: -2835383507107084826}
+  - {fileID: -4768985936550639855}
+  - {fileID: 4101302585487272632}
+  - {fileID: -9218636144641788081}
+  - {fileID: -1754488597978339154}
+  - {fileID: 8560104476494939502}
+  - {fileID: -2238768285517260216}
+  - {fileID: -3311616697420002765}
+  - {fileID: -1204322780868820887}
+  - {fileID: 3477231243350534526}
   EditorParameters:
   - {fileID: -5447701612350994384}
   - {fileID: 5598795095949235303}
@@ -295,8 +1269,51 @@ MonoBehaviour:
   - {fileID: 6442534539062769904}
   StringsBanks:
   - {fileID: 754540649295285727}
-  cacheTime: 638340466520199492
+  cacheTime: 638341055580482080
   cacheVersion: 131608
+--- !u!114 &146138919479874427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/G4 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
 --- !u!114 &754540649295285727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,10 +1329,53 @@ MonoBehaviour:
   Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638340466520199492
+  lastModified: 638341055580482080
   FileSizes:
   - Name: Desktop
-    Value: 1244
+    Value: 2264
+  Exists: 1
+--- !u!114 &1730593146378210921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ab5 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
   Exists: 1
 --- !u!114 &1948165817525978747
 MonoBehaviour:
@@ -343,8 +1403,8 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &2224307821826322071
+  Length: 3050
+--- !u!114 &2366282148024485281
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -354,25 +1414,304 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Notes/Note Collect
+  m_Name: event:/Notes/G4 - Note Collect
   m_EditorClassIdentifier: 
-  Path: event:/Notes/Note Collect
+  Path: event:/Notes/G4 - Note Collect
   Guid:
-    Data1: -1423124520
-    Data2: 1208352645
-    Data3: 1067556005
-    Data4: 860444424
+    Data1: -1058446017
+    Data2: 1241436365
+    Data3: 209113500
+    Data4: 1858764195
   Banks:
   - {fileID: -6206710054896607891}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -2157840158304560249}
-  - {fileID: -3554725448204050196}
+  - {fileID: 146138919479874427}
+  - {fileID: 3656054923659600653}
   MinDistance: 1
   MaxDistance: 20
   Length: 145
+--- !u!114 &2452495805515586504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/A4 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &3034076571453269834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/A5 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &3477231243350534526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Death
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Death
+  Guid:
+    Data1: -94958966
+    Data2: 1118563239
+    Data3: -1949500760
+    Data4: -1542475143
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3656054923659600653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/G4 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &4029917142180125691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/D5 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &4101302585487272632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/G5 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/G5 - Note Collect
+  Guid:
+    Data1: 1235321519
+    Data2: 1095473811
+    Data3: -896019278
+    Data4: -2057569343
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1827353364884090772}
+  - {fileID: 6591944097561298303}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &4531832814298088466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/C4 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &4820959758204167663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Gb4 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &5552484868848156309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ab4 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
 --- !u!114 &5598795095949235303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,7 +1755,7 @@ MonoBehaviour:
   - B5
   - C6
   Exists: 1
---- !u!114 &5627228920692592295
+--- !u!114 &5605576307812399494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -426,7 +1765,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Game Music/Melody Note
+  m_Name: parameter:/B5 - Note Collect/Melody Note
   m_EditorClassIdentifier: 
   Name: Melody Note
   StudioPath: 
@@ -459,7 +1798,36 @@ MonoBehaviour:
   - B5
   - C6
   Exists: 1
---- !u!114 &5637257478620456099
+--- !u!114 &5679064687802603379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/Eb5 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/Eb5 - Note Collect
+  Guid:
+    Data1: -2137195142
+    Data2: 1148102053
+    Data3: 775293885
+    Data4: -459486006
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 8190865662415941969}
+  - {fileID: -1242349223078427087}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &5686904327563510637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -469,27 +1837,98 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Game Music/Path
+  m_Name: parameter:/Gb4 - Note Collect/Melody Note
   m_EditorClassIdentifier: 
-  Name: Path
+  Name: Melody Note
   StudioPath: 
   Min: 0
-  Max: 7
+  Max: 18
   Default: 0
   ID:
-    data1: 2555720422
-    data2: 1056158329
+    data1: 3691980062
+    data2: 4265620352
   Type: 2
-  IsGlobal: 0
+  IsGlobal: 1
   Labels:
-  - Path A
-  - Path B
-  - Path C
-  - Path D
-  - Path E
-  - Path F
-  - Path G
-  - Path H
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &5762025107235284593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bb5 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &6266212489730728882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/B5 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
   Exists: 1
 --- !u!114 &6442534539062769904
 MonoBehaviour:
@@ -506,8 +1945,402 @@ MonoBehaviour:
   Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638340466520183764
+  lastModified: 638341055580457025
   FileSizes:
   - Name: Desktop
-    Value: 1542
+    Value: 2018
+  Exists: 1
+--- !u!114 &6577245594368052832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bb4 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &6591944097561298303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/G5 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &6689263111513839570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/C5 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/C5 - Note Collect
+  Guid:
+    Data1: 858169951
+    Data2: 1203125221
+    Data3: -945422954
+    Data4: -1517038415
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2451169997654543415}
+  - {fileID: -8362302395552760826}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &6818855327667479177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Gb5 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &7206265926794116027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/F5 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/F5 - Note Collect
+  Guid:
+    Data1: 458700164
+    Data2: 1190667682
+    Data3: -470962814
+    Data4: 828215290
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 8855281299968980573}
+  - {fileID: 8108146279033137096}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &8108146279033137096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/F5 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &8190865662415941969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Eb5 - Note Collect/Chord Root
+  m_EditorClassIdentifier: 
+  Name: Chord Root
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 2722392804
+    data2: 4092092959
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - G
+  - C
+  - F
+  - Bb
+  - Ab
+  - Co
+  Exists: 1
+--- !u!114 &8499523742378840375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/B4 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
+  Exists: 1
+--- !u!114 &8560104476494939502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/D5 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/D5 - Note Collect
+  Guid:
+    Data1: 1089819365
+    Data2: 1292948613
+    Data3: -1766155102
+    Data4: -125130636
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2741869513391761705}
+  - {fileID: 4029917142180125691}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &8713075631300406579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/C6 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/C6 - Note Collect
+  Guid:
+    Data1: -995194802
+    Data2: 1165759444
+    Data3: -484685894
+    Data4: 1948494760
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5965132761664185310}
+  - {fileID: -1001012254162043322}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &8826939250949682398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes/Ab4 - Note Collect
+  m_EditorClassIdentifier: 
+  Path: event:/Notes/Ab4 - Note Collect
+  Guid:
+    Data1: -915345664
+    Data2: 1231241735
+    Data3: 787435685
+    Data4: 579415676
+  Banks:
+  - {fileID: -6206710054896607891}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5552484868848156309}
+  - {fileID: -671509896060281453}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 145
+--- !u!114 &8855281299968980573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/F5 - Note Collect/Melody Note
+  m_EditorClassIdentifier: 
+  Name: Melody Note
+  StudioPath: 
+  Min: 0
+  Max: 18
+  Default: 0
+  ID:
+    data1: 3691980062
+    data2: 4265620352
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - C4
+  - Eb4
+  - Gb4
+  - G4
+  - Ab4
+  - A4
+  - Bb4
+  - B4
+  - C5
+  - D5
+  - Eb5
+  - F5
+  - Gb5
+  - G5
+  - Ab5
+  - A5
+  - Bb5
+  - B5
+  - C6
   Exists: 1

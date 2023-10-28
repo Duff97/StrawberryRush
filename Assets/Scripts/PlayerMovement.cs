@@ -1,3 +1,4 @@
+using FMOD;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -39,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
     private void Jump()
     {
         rb.velocity = new Vector3(velocity, jumpVelocity);
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Jump");
     }
 
     private void HandleGameStarted()

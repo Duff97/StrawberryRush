@@ -15,9 +15,6 @@
 		<property name="initialValue">
 			<value>0</value>
 		</property>
-		<property name="seekSpeed">
-			<value>2.5</value>
-		</property>
 		<relationship name="automators">
 			<destination>{bb833fa6-481c-449a-b07e-5b04c2d6b3b5}</destination>
 		</relationship>
@@ -38,6 +35,7 @@
 			<destination>{91a134c8-1b98-4907-b78a-85acf9997596}</destination>
 			<destination>{4c0f7d3a-7714-4b5f-b6c6-5a706b836ae3}</destination>
 			<destination>{8f780270-1a5d-4961-9853-161e8aa95c03}</destination>
+			<destination>{61d394ec-bdfd-436d-951a-4b96e521b7a2}</destination>
 		</relationship>
 	</object>
 	<object class="AutomationPoint" id="{91a134c8-1b98-4907-b78a-85acf9997596}">
@@ -59,6 +57,14 @@
 	<object class="AutomationPoint" id="{8f780270-1a5d-4961-9853-161e8aa95c03}">
 		<property name="position">
 			<value>3</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{61d394ec-bdfd-436d-951a-4b96e521b7a2}">
+		<property name="position">
+			<value>0</value>
 		</property>
 		<property name="value">
 			<value>0</value>
