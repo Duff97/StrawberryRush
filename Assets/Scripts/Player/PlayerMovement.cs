@@ -1,4 +1,4 @@
-using FMOD;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private bool isInGame = false;
     private Vector3 startPosition;
+
+    public static event Action OnPlayerJump;
 
     // Start is called before the first frame update
     void Start()
@@ -40,8 +42,7 @@ public class PlayerMovement : MonoBehaviour
     private void Jump()
     {
         rb.velocity = new Vector3(velocity, jumpVelocity);
-
-        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Jump");
+        OnPlayerJump?.Invoke();
     }
 
     private void HandleGameStarted()
