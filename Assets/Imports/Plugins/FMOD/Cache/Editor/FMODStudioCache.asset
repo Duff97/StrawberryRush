@@ -365,7 +365,7 @@ MonoBehaviour:
   Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Main Scene.bank
   Name: Main Scene
   StudioPath: bank:/Main Scene
-  lastModified: 638341092956541807
+  lastModified: 638341267597012334
   FileSizes:
   - Name: Desktop
     Value: 2689952
@@ -1317,7 +1317,7 @@ MonoBehaviour:
   - {fileID: 6442534539062769904}
   StringsBanks:
   - {fileID: 754540649295285727}
-  cacheTime: 638341092956587188
+  cacheTime: 638341267597022333
   cacheVersion: 131608
 --- !u!114 &244412769383826516
 MonoBehaviour:
@@ -1422,7 +1422,7 @@ MonoBehaviour:
   Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638341092956587188
+  lastModified: 638341267597022333
   FileSizes:
   - Name: Desktop
     Value: 2264
@@ -2015,7 +2015,7 @@ MonoBehaviour:
   Path: Assets/FMOD/StrawberryRush_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638341092956576824
+  lastModified: 638341267597022333
   FileSizes:
   - Name: Desktop
     Value: 2018

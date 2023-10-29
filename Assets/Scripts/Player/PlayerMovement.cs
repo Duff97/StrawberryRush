@@ -40,8 +40,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Jump()
-    {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Jump");        
+    {    
         rb.velocity = new Vector3(velocity, jumpVelocity);
         OnPlayerJump?.Invoke();
     }
