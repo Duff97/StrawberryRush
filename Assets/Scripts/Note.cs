@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class Note : MonoBehaviour
 {
-    //Declaring FMOD variable.
-    //private FMOD.Studio.EventInstance melody;
 
     [SerializeField] private int noteNumber;
 
@@ -18,15 +16,7 @@ public class Note : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {
-        /* 
-         * Saving code for future reference.
-         * Setting FMOD variable to an FMOD event. Will start and immediately release the event.
-            melody = FMODUnity.RuntimeManager.CreateInstance("event:/Notes/Note Collect");
-            melody.start();
-            melody.release();
-        */
-        
+    {        
         OnNoteCollected?.Invoke(noteNumber);
         gameObject.SetActive(false);
     }

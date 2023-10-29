@@ -12,10 +12,24 @@ public class SoundManager : MonoBehaviour
     {
         {"Jump", "event:/SFX/Jump"},
         {"Footstep", "event:/SFX/Footsteps"},
-        {$"{notePrefix}0", ""}, //Default note sound
-        {$"{notePrefix}1", ""},
-        {$"{notePrefix}2",  ""},
-        {$"{notePrefix}3", ""}
+        {$"{notePrefix}0", "event:/Notes/A4 - Note Collect"}, //Default note sound
+        {$"{notePrefix}1", "event:/Notes/A5 - Note Collect"},
+        {$"{notePrefix}2",  "event:/Notes/Ab4 - Note Collect"},
+        {$"{notePrefix}3", "event:/Notes/Ab5 - Note Collect"},
+        {$"{notePrefix}4", "event:/Notes/B4 - Note Collect"},
+        {$"{notePrefix}5", "event:/Notes/B5 - Note Collect"},
+        {$"{notePrefix}6", "event:/Notes/Bb4 - Note Collect"},
+        {$"{notePrefix}7", "event:/Notes/Bb5 - Note Collect"},
+        {$"{notePrefix}8", "event:/Notes/C4 - Note Collect"},
+        {$"{notePrefix}9", "event:/Notes/C5 - Note Collect"},
+        {$"{notePrefix}10", "event:/Notes/C6 - Note Collect"},
+        {$"{notePrefix}11", "event:/Notes/D5 - Note Collect"},
+        {$"{notePrefix}12", "event:/Notes/Eb4 - Note Collect"},
+        {$"{notePrefix}13", "event:/Notes/Eb5 - Note Collect"},
+        {$"{notePrefix}14", "event:/Notes/F5 - Note Collect"},
+        {$"{notePrefix}15", "event:/Notes/G4 - Note Collect"},
+        {$"{notePrefix}16", "event:/Notes/Gb4 - Note Collect"},
+        {$"{notePrefix}17", "event:/Notes/Gb5 - Note Collect"}
     };
 
     

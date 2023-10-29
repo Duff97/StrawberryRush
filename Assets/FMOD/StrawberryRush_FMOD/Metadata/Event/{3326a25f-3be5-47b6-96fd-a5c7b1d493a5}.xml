@@ -122,9 +122,6 @@
 		<property name="length">
 			<value>0.14531754574811628</value>
 		</property>
-		<relationship name="triggerConditions">
-			<destination>{5a0d260b-6356-4d1b-85ce-cc61bd84d7b2}</destination>
-		</relationship>
 		<relationship name="audioFile">
 			<destination>{88fb2525-08f1-40f0-b7ce-17df24060d19}</destination>
 		</relationship>
@@ -150,17 +147,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{b40fbebd-e1a5-47b5-8a41-4881ef388582}" />
 	<object class="MixerBusFader" id="{cc2ac29c-75b9-4914-b20a-452886807ed4}" />
-	<object class="ParameterCondition" id="{5a0d260b-6356-4d1b-85ce-cc61bd84d7b2}">
-		<property name="minimum">
-			<value>8</value>
-		</property>
-		<property name="maximum">
-			<value>8</value>
-		</property>
-		<relationship name="parameter">
-			<destination>{d7c28055-8099-4f87-88ad-8ebdb6fa9f47}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusEffectChain" id="{81b0d5d5-be86-4d1b-915a-db62d6b35dd0}">
 		<relationship name="effects">
 			<destination>{09c405e8-5ba3-460f-887f-98bf8fa73d73}</destination>
