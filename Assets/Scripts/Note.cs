@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,10 @@ public class Note : MonoBehaviour
 {
     //Declaring FMOD variable.
     //private FMOD.Studio.EventInstance melody;
+
+    [SerializeField] private int noteNumber;
+
+    public static event Action<int> OnNoteCollected;
 
     private void Start()
     {
@@ -22,6 +27,7 @@ public class Note : MonoBehaviour
             melody.release();
         */
         
+        OnNoteCollected?.Invoke(noteNumber);
         gameObject.SetActive(false);
     }
 
