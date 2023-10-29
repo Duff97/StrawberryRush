@@ -43,6 +43,7 @@ public class SoundManager : MonoBehaviour
     {
         string fmodEvent = FMODEvents["Note"].Replace(noteValueTmp, noteValue);
         FMODUnity.RuntimeManager.PlayOneShot(fmodEvent);
+        
     }
 
     private void OnDestroy()

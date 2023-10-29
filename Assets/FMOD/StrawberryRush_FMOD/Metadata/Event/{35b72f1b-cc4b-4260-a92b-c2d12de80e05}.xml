@@ -61,9 +61,6 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{7bcae8cb-2a0f-4849-821e-4559bdf29f01}">
-		<property name="maxVoices">
-			<value>1</value>
-		</property>
 		<property name="voiceStealing">
 			<value>3</value>
 		</property>

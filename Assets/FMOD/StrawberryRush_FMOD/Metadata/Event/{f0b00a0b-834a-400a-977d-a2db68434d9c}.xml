@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{f0b00a0b-834a-400a-977d-a2db68434d9c}">
+		<property name="note" />
 		<property name="name">
 			<value>Gb5 - Note Collect</value>
 		</property>
@@ -61,9 +62,6 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{66bacc47-761d-444c-bf42-4175382c156b}">
-		<property name="maxVoices">
-			<value>1</value>
-		</property>
 		<property name="voiceStealing">
 			<value>3</value>
 		</property>
