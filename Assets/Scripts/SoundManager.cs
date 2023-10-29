@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +17,14 @@ public class SoundManager : MonoBehaviour
     {
         //Bind functions to game events 
         PlayerMovement.OnPlayerJump += HandlePlayerJump;
+        PlayerFootstep.OnFootstep += HandlePlayerFootstep;
 
+    }
+
+    private void HandlePlayerFootstep()
+    {
+        //This will be called every time a footstep is detected
+        FMODUnity.RuntimeManager.PlayOneShot(FMODEvents["Footstep"]);
     }
 
     private void HandlePlayerJump()
@@ -30,6 +38,7 @@ public class SoundManager : MonoBehaviour
     {
         //Unbind functions (not necessary, but could be usefull in case the game grows and has multiple scenes)
         PlayerMovement.OnPlayerJump -= HandlePlayerJump;
+        PlayerFootstep.OnFootstep -= HandlePlayerFootstep;
     }
 
 

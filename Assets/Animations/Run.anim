@@ -11548,16 +11548,16 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.083333336
-    functionName: PlayFootstep
+    functionName: TriggerFootstep
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 11500000, guid: 1acc97f52738c4e4992a27d1aaea860b, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.29166666
-    functionName: PlayFootstep
+    functionName: TriggerFootstep
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 11500000, guid: 1acc97f52738c4e4992a27d1aaea860b, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
