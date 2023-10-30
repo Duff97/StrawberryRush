@@ -15,6 +15,12 @@
 		<property name="initialValue">
 			<value>0</value>
 		</property>
+		<property name="seekSpeed">
+			<value>2</value>
+		</property>
+		<property name="seekSpeedAsymmetric">
+			<value>true</value>
+		</property>
 		<relationship name="automators">
 			<destination>{bb833fa6-481c-449a-b07e-5b04c2d6b3b5}</destination>
 		</relationship>

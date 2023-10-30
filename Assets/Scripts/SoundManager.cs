@@ -23,6 +23,8 @@ public class SoundManager : MonoBehaviour
         PlayerMovement.OnPlayerJump += HandlePlayerJump;
         PlayerFootstep.OnFootstep += HandlePlayerFootstep;
         Note.OnNoteCollected += HandleNoteCollected;
+        FallDetector.OnFallDetected += GameOver;
+        WallDetector.OnWallDetected += GameOver;
 
     }
 
@@ -44,6 +46,12 @@ public class SoundManager : MonoBehaviour
         string fmodEvent = FMODEvents["Note"].Replace(noteValueTmp, noteValue);
         FMODUnity.RuntimeManager.PlayOneShot(fmodEvent);
         
+    }
+
+    private void GameOver()
+    {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Game State", 2);
+
     }
 
     private void OnDestroy()

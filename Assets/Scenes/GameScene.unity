@@ -1735,16 +1735,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 578325291}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Emitters:
-  - Target: {fileID: 1394411782}
-    Params:
-    - Name: Game State
-      Value: 1
+  Parameter: Game State
   TriggerEvent: 19
+  Value: 1
 --- !u!1 &588743639
 GameObject:
   m_ObjectHideFlags: 0
@@ -6219,7 +6216,7 @@ GameObject:
   - component: {fileID: 1890846218}
   - component: {fileID: 1890846220}
   - component: {fileID: 1890846219}
-  - component: {fileID: 1890846221}
+  - component: {fileID: 1890846222}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -6286,7 +6283,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890846217}
   m_CullTransparentMesh: 1
---- !u!114 &1890846221
+--- !u!114 &1890846222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6295,16 +6292,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1890846217}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Emitters:
-  - Target: {fileID: 1394411782}
-    Params:
-    - Name: Game State
-      Value: 0
-  TriggerEvent: 11
+  Parameter: Game State
+  TriggerEvent: 1
+  Value: 0
 --- !u!1001 &1910309820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7071,6 +7065,10 @@ PrefabInstance:
     - target: {fileID: 423718686269132736, guid: c4e30346739006b43b9edc9862d9a71c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942950652171368118, guid: c4e30346739006b43b9edc9862d9a71c, type: 3}
+      propertyPath: velocity
+      value: 5.25
       objectReference: {fileID: 0}
     - target: {fileID: 7972228777032881758, guid: c4e30346739006b43b9edc9862d9a71c, type: 3}
       propertyPath: m_Name
