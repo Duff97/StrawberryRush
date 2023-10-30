@@ -45,7 +45,6 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{20d116b4-cd7f-4dfb-9378-20e5d9aff207}</destination>
-			<destination>{8e1460c1-807f-4ed8-82ae-846967ee232d}</destination>
 			<destination>{d0527dad-48fe-48b4-b7e6-a8c448784587}</destination>
 		</relationship>
 		<relationship name="banks">
@@ -243,11 +242,6 @@
 	<object class="ParameterProxy" id="{20d116b4-cd7f-4dfb-9378-20e5d9aff207}">
 		<relationship name="preset">
 			<destination>{f24503e4-c541-45aa-a4ce-dd36669a1827}</destination>
-		</relationship>
-	</object>
-	<object class="ParameterProxy" id="{8e1460c1-807f-4ed8-82ae-846967ee232d}">
-		<relationship name="preset">
-			<destination>{1bd2df52-3d74-4e23-aa5b-cf45fb04937a}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterProxy" id="{d0527dad-48fe-48b4-b7e6-a8c448784587}">
@@ -1201,6 +1195,7 @@
 			<destination>{f4e41d21-bb46-4c1a-a830-c1098d6f84ce}</destination>
 			<destination>{bc4c8517-fae0-4e26-8b21-7dad2f51ef56}</destination>
 			<destination>{7e0a3877-2c79-46c1-b554-ba044123e337}</destination>
+			<destination>{ef9465a0-3bff-4f08-bfdb-d162926ccdec}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{ee180331-988f-46c5-8c76-41c78902871d}" />
@@ -1299,6 +1294,14 @@
 	<object class="AutomationPoint" id="{7e0a3877-2c79-46c1-b554-ba044123e337}">
 		<property name="position">
 			<value>3</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{ef9465a0-3bff-4f08-bfdb-d162926ccdec}">
+		<property name="position">
+			<value>0</value>
 		</property>
 		<property name="value">
 			<value>0</value>
