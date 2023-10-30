@@ -8,12 +8,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float velocity;
     [SerializeField] private float jumpVelocity;
     [SerializeField] private KeyCode jumpKey;
-    [SerializeField] private GroundDetector groundDetector;
     [SerializeField] private ConstantForce gravity;
 
     private Rigidbody rb;
     private bool isInGame = false;
     private Vector3 startPosition;
+    private bool jumpActive = false;
 
     public static event Action OnPlayerJump;
 
@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
         startPosition = transform.position;
         GameManager.OnGameStarted += HandleGameStarted;
         GameManager.OnGameFinished += HandleGameFinished;
+        GroundDetector.OnGroundEntered += HandleGroundDetected;
+        GroundDetector.OnGroundExited += HandleGroundExited;
     }
 
     private void FixedUpdate()
@@ -31,17 +33,22 @@ public class PlayerMovement : MonoBehaviour
 
         if (!isInGame) return;
 
-        rb.velocity = new Vector3 (velocity, rb.velocity.y);
+        if (jumpActive && rb.velocity.y != 0)
+        {
+            rb.velocity = new Vector3(velocity, 0);
+        }
 
-        if (!groundDetector.isGrounded() || !Input.GetKey(jumpKey)) return;
-
-        Jump();
-
+        if (jumpActive && Input.GetKey(jumpKey))
+        {
+            Jump();
+        }
+        
     }
 
     private void Jump()
     {    
         rb.velocity = new Vector3(velocity, jumpVelocity);
+        jumpActive = false;
         OnPlayerJump?.Invoke();
     }
 
@@ -50,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
         gravity.enabled = true;
         transform.position = startPosition;
         isInGame = true;
+        rb.velocity = new Vector3(velocity, 0);
     }
 
     private void HandleGameFinished()
@@ -59,9 +67,23 @@ public class PlayerMovement : MonoBehaviour
         isInGame = false;
     }
 
+    private void HandleGroundDetected()
+    {
+        gravity.enabled = false;
+        jumpActive = true;
+    }
+
+    private void HandleGroundExited()
+    {
+        gravity.enabled = true;
+        jumpActive = false;
+    }
+
     private void OnDestroy()
     {
         GameManager.OnGameStarted -= HandleGameStarted;
         GameManager.OnGameStarted -= HandleGameFinished;
+        GroundDetector.OnGroundEntered -= HandleGroundDetected;
+        GroundDetector.OnGroundExited -= HandleGroundExited;
     }
 }

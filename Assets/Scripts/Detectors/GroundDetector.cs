@@ -10,12 +10,24 @@ public class GroundDetector : MonoBehaviour
 
     private bool groundDetected = false;
 
+    public static event Action OnGroundEntered;
+    public static event Action OnGroundExited;
+
+
     private void FixedUpdate()
     {
+        bool wasGrounded = groundDetected;
         groundDetected = Physics.Raycast(transform.position, Vector3.down, detectionDistance, groundLayer);
+
+        if (wasGrounded == groundDetected) return;
+
+        if (groundDetected)
+            OnGroundEntered?.Invoke();
+        else
+            OnGroundExited?.Invoke();
     }
 
-    public bool isGrounded()
+    public bool IsGrounded()
     {
         return groundDetected;
     }

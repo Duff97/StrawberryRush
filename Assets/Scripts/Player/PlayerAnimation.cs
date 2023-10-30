@@ -15,7 +15,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private void FixedUpdate()
     {
-        animator.SetBool("IsOnGround", groundDetector.isGrounded());
+        animator.SetBool("IsOnGround", groundDetector.IsGrounded());
     }
 
     private void HandlePlayerJump()
