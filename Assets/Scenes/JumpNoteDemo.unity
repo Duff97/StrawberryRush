@@ -2929,7 +2929,7 @@ GameObject:
   - component: {fileID: 1131053132}
   - component: {fileID: 1131053131}
   - component: {fileID: 1131053135}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: FinishLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4682,7 +4682,7 @@ GameObject:
   - component: {fileID: 1767738825}
   - component: {fileID: 1767738824}
   - component: {fileID: 1767738823}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: FallDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
