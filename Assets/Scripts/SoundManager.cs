@@ -21,7 +21,7 @@ public class SoundManager : MonoBehaviour
     private void Start()
     {
         //Bind functions to game events 
-        PlayerMovement.OnPlayerJump += HandlePlayerJump;
+        JumpEffect.OnActivated += HandleJumpEffect;
         PlayerFootstep.OnFootstep += HandlePlayerFootstep;
         Note.OnNoteCollected += HandleNoteCollected;
         FallDetector.OnFallDetected += GameOver;
@@ -36,7 +36,7 @@ public class SoundManager : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot(FMODEvents["Footstep"]);
     }
 
-    private void HandlePlayerJump()
+    private void HandleJumpEffect()
     {
         //This will be called every time the player jumps!
         FMODUnity.RuntimeManager.PlayOneShot(FMODEvents["Jump"]);
@@ -65,9 +65,12 @@ public class SoundManager : MonoBehaviour
     private void OnDestroy()
     {
         //Unbind functions (not necessary, but could be usefull in case the game grows and has multiple scenes)
-        PlayerMovement.OnPlayerJump -= HandlePlayerJump;
+        JumpEffect.OnActivated -= HandleJumpEffect;
         PlayerFootstep.OnFootstep -= HandlePlayerFootstep;
         Note.OnNoteCollected -= HandleNoteCollected;
+        FallDetector.OnFallDetected -= GameOver;
+        WallDetector.OnWallDetected -= GameOver;
+        WallDetector.OnWallDetected -= Splat;
     }
 
 

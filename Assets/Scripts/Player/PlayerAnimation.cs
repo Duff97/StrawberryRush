@@ -10,7 +10,7 @@ public class PlayerAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerMovement.OnPlayerJump += HandlePlayerJump;
+        JumpEffect.OnActivated += HandlePlayerJump;
     }
 
     private void FixedUpdate()
@@ -25,7 +25,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private void OnDestroy()
     {
-        PlayerMovement.OnPlayerJump -= HandlePlayerJump;
+        JumpEffect.OnActivated -= HandlePlayerJump;
     }
 
 }

@@ -14,7 +14,7 @@ public class GroundDetector : MonoBehaviour
     public static event Action OnGroundExited;
 
 
-    private void FixedUpdate()
+    private void Update()
     {
         bool wasGrounded = groundDetected;
         groundDetected = Physics.Raycast(transform.position, Vector3.down, detectionDistance, groundLayer);

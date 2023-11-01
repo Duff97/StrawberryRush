@@ -64,8 +64,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.42067632, y: 0.72616005, z: 1}
-  m_Center: {x: 0.20289557, y: 0.23107243, z: 0}
+  m_Size: {x: 0.78789616, y: 1.0347183, z: 1}
+  m_Center: {x: 0.019285694, y: 0.21564138, z: 0}
 --- !u!1 &7972228777032881758
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,9 +197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 5
-  jumpVelocity: 10
-  jumpKey: 32
-  groundDetector: {fileID: 6251501150454665155}
   gravity: {fileID: 4008569449302952796}
 --- !u!75 &4008569449302952796
 ConstantForce:
