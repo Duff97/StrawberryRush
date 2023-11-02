@@ -64,8 +64,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.78789616, y: 1.0347183, z: 1}
-  m_Center: {x: 0.019285694, y: 0.21564138, z: 0}
+  m_Size: {x: 0.80667186, y: 0.88270843, z: 1}
+  m_Center: {x: 0.00050997734, y: 0.25409514, z: 0}
 --- !u!1 &7972228777032881758
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,6 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 5
+  maxYVelocity: 7
   gravity: {fileID: 4008569449302952796}
 --- !u!75 &4008569449302952796
 ConstantForce:
@@ -206,7 +207,7 @@ ConstantForce:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7972228777032881758}
   m_Enabled: 0
-  m_Force: {x: 0, y: -30, z: 0}
+  m_Force: {x: 0, y: -15, z: 0}
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}

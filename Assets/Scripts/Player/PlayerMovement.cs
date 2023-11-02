@@ -33,7 +33,6 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector3(velocity, 0);
         }
-        
     }
 
     private void HandleGameStarted()
@@ -53,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleGroundEntered()
     {
+        rb.velocity = new Vector3(velocity, 0);
         gravity.enabled = false;
     }
 
