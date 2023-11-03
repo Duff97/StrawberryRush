@@ -151,6 +151,9 @@
 		</property>
 	</object>
 	<object class="DelayEffect" id="{56152f73-8c54-4b86-864c-e1e2c3a3293d}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
 		<property name="delay">
 			<value>86</value>
 		</property>
