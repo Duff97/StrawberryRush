@@ -6,10 +6,16 @@ public class PlayerCam : MonoBehaviour
 {
 
     [SerializeField] private Transform follow;
-    [SerializeField] private float yOffset;
+    
+    private Vector3 offset;
+
+    private void Start()
+    {
+        offset = transform.position - follow.position;
+    }
 
     private void Update()
     {
-        transform.position = new Vector3(follow.position.x, follow.position.y + yOffset, transform.position.z);
+        transform.position = follow.position + offset;
     }
 }
