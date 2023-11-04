@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private bool isInGame = false;
     private Vector3 startPosition;
+    private bool adjustVelocity = true;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
         GameManager.OnGameFinished += HandleGameFinished;
         GroundDetector.OnGroundEntered += HandleGroundEntered;
         GroundDetector.OnGroundExited += HandleGroundExited;
+        FlyEffect.OnActivated += HandleFlightStarted;
+        FlyEffect.OnDeactivated += HandleFlightExited;
     }
 
     private void FixedUpdate()
@@ -29,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (!isInGame) return;
 
-        if (!gravity.enabled && rb.velocity.y != 0)
+        if (adjustVelocity && !gravity.enabled && rb.velocity.y != 0)
         {
             rb.velocity = new Vector3(velocity, 0);
         }
@@ -61,11 +64,24 @@ public class PlayerMovement : MonoBehaviour
         gravity.enabled = true;
     }
 
+    private void HandleFlightStarted()
+    {
+        gravity.enabled = false;
+        adjustVelocity = false;
+    }
+
+    private void HandleFlightExited()
+    {
+        adjustVelocity = true;
+    }
+
     private void OnDestroy()
     {
         GameManager.OnGameStarted -= HandleGameStarted;
         GameManager.OnGameStarted -= HandleGameFinished;
         GroundDetector.OnGroundEntered -= HandleGroundEntered;
         GroundDetector.OnGroundExited -= HandleGroundExited;
+        FlyEffect.OnActivated -= HandleFlightStarted;
+        FlyEffect.OnDeactivated -= HandleFlightExited;
     }
 }
