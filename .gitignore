@@ -91,7 +91,9 @@ fmod_editor.log
 
 # FMOD related .gitignore entries
 Assets/StreamingAssets/
+Assets/StreamingAssets.meta
 Assets/FMODStudioCache.asset
 Assets/FMODStudioProjectPath.asset
 fmod.log
 Assets/FMOD/**/Metadata/*
+Assets/Imports/Plugins/FMOD/platforms

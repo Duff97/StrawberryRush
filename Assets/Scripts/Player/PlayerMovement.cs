@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float velocity;
     [SerializeField] private ConstantForce gravity;
-
+    
     private Rigidbody rb;
     private bool isInGame = false;
     private Vector3 startPosition;
