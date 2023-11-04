@@ -1459,10 +1459,10 @@
     "m_Guid": {
         "m_GuidSerialized": "06b58c28-f89d-478c-87c8-931bb1466ac3"
     },
-    "m_Name": "FresnelColor",
+    "m_Name": "OutlineColor",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "FresnelColor",
-    "m_DefaultReferenceName": "_FresnelColor",
+    "m_RefNameGeneratedByDisplayName": "OutlineColor",
+    "m_DefaultReferenceName": "_OutlineColor",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -1699,7 +1699,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "a0e5e6c3d2d94a308414e2f8bc76d423",
     "m_Id": 0,
-    "m_DisplayName": "FresnelColor",
+    "m_DisplayName": "OutlineColor",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1746,7 +1746,7 @@
         "a": 0.0
     },
     "isMainColor": false,
-    "m_ColorMode": 0
+    "m_ColorMode": 1
 }
 
 {
@@ -1776,7 +1776,7 @@
         "a": 0.0
     },
     "isMainColor": false,
-    "m_ColorMode": 0
+    "m_ColorMode": 1
 }
 
 {

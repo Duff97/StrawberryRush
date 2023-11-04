@@ -55,7 +55,8 @@ Material:
     - _QueueOffset: 0
     - _Smoothness: 0.705
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 0}
-    - _FresnelColor: {r: 1.4980394, g: 1.489617, b: 0, a: 0}
-    - _NoiseColor: {r: 1, g: 0.27668712, b: 0, a: 0}
+    - _BaseColor: {r: 3.2452831, g: 2.0801454, b: 0.260235, a: 0}
+    - _FresnelColor: {r: 16, g: 15.923737, b: 1.4339619, a: 1}
+    - _NoiseColor: {r: 4, g: 1.1067485, b: 0, a: 0}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
