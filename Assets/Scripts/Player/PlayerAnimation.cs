@@ -11,6 +11,8 @@ public class PlayerAnimation : MonoBehaviour
     void Start()
     {
         JumpEffect.OnActivated += HandlePlayerJump;
+        FlyEffect.OnActivated += HandleFlightStart;
+        FlyEffect.OnDeactivated += HandleFlightEnd;
     }
 
     private void FixedUpdate()
@@ -23,9 +25,22 @@ public class PlayerAnimation : MonoBehaviour
         animator.SetTrigger("Jump");
     }
 
+    private void HandleFlightStart()
+    {
+        animator.SetBool("IsFlying", true);
+        animator.SetTrigger("Fly");
+    }
+
+    private void HandleFlightEnd()
+    {
+        animator.SetBool("IsFlying", false);
+    }
+
     private void OnDestroy()
     {
         JumpEffect.OnActivated -= HandlePlayerJump;
+        FlyEffect.OnActivated -= HandleFlightStart;
+        FlyEffect.OnDeactivated -= HandleFlightEnd;
     }
 
 }
