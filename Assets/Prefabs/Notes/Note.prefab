@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9029355395975110700}
   - component: {fileID: 1289130098689073063}
-  - component: {fileID: 7740644019190000916}
   - component: {fileID: 5489810054412102826}
+  - component: {fileID: 1895805379032761538}
   m_Layer: 8
   m_Name: Note
   m_TagString: Untagged
@@ -43,8 +43,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302530424039689907}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!135 &7740644019190000916
-SphereCollider:
+--- !u!114 &5489810054412102826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302530424039689907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf2395865e73714fa9374a009259a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteValue: 15
+  collectKey: 101
+--- !u!65 &1895805379032761538
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -62,22 +76,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.65
-  m_Center: {x: -0.4, y: 0, z: 0}
---- !u!114 &5489810054412102826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1302530424039689907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bf2395865e73714fa9374a009259a84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noteValue: 15
-  collectKey: 101
+  m_Size: {x: 1.4998837, y: 3.1947331, z: 1}
+  m_Center: {x: -0.3299651, y: 0.022048099, z: 0}
 --- !u!1001 &7659722863239077573
 PrefabInstance:
   m_ObjectHideFlags: 0

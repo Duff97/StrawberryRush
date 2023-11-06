@@ -148,8 +148,8 @@ GameObject:
   - component: {fileID: 2942950652171368118}
   - component: {fileID: 4008569449302952796}
   - component: {fileID: 5723558887049990072}
-  - component: {fileID: 646354961491707291}
   - component: {fileID: 6116015617501032859}
+  - component: {fileID: 5747418501633551373}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -293,8 +293,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 4925825160688865703}
   groundDetector: {fileID: 2467461689203667736}
---- !u!65 &646354961491707291
-BoxCollider:
+--- !u!114 &6116015617501032859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7972228777032881758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdce4b9e3c4542d43ad58d174c755427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trail: {fileID: 3503479654112064143}
+--- !u!135 &5747418501633551373
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -312,21 +325,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.30092555, y: 0.88724566, z: 1}
-  m_Center: {x: 0.027564943, y: 0.19760394, z: 0}
---- !u!114 &6116015617501032859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7972228777032881758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdce4b9e3c4542d43ad58d174c755427, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trail: {fileID: 3503479654112064143}
+  m_Radius: 0.1
+  m_Center: {x: 0.36, y: 0.24, z: 0}
 --- !u!1 &8176364816969499513
 GameObject:
   m_ObjectHideFlags: 0
