@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: JumpNoteShaderMat
+  m_Name: CNoteShaderMat
   m_Shader: {fileID: -6465566751694194690, guid: a9ecb533dbcbe694dbe8554a1d1c9e64, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -55,8 +55,8 @@ Material:
     - _QueueOffset: 0
     - _Smoothness: 0.705
     m_Colors:
-    - _BaseColor: {r: 2.0389817, g: 2.116594, b: 2.981132, a: 1}
-    - _FresnelColor: {r: 5.545321, g: 0, b: 5.992157, a: 0}
-    - _NoiseColor: {r: 0, g: 4, b: 3.7744675, a: 1}
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.77358496, g: 0.062032767, b: 0.09077644, a: 0}
+    - _FresnelColor: {r: 16, g: 15.923737, b: 1.4339619, a: 1}
+    - _NoiseColor: {r: 1.490566, g: 0, b: 0.045656916, a: 0}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
