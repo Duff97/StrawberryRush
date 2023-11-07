@@ -57,7 +57,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteValue: 15
-  collectKey: 122
+  keyValue: 0
+  materials:
+  - {fileID: 2100000, guid: 014bc0c8c385a244ca2f393f5f802723, type: 2}
+  - {fileID: 2100000, guid: e651b5165291b094c8f9d67fbab258ed, type: 2}
+  - {fileID: 2100000, guid: 40964a8e79118674e91d806e3d149583, type: 2}
+  noteRenderer: {fileID: 5164525755799438101}
+  textField: {fileID: 7555050645594076834}
 --- !u!135 &1128543563472808757
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -78,7 +84,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.95
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.69, z: 0}
 --- !u!1 &8014857906258772825
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,6 +317,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4377e9dd51af08a498dd661291bde926, type: 3}
+--- !u!23 &5164525755799438101 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 4377e9dd51af08a498dd661291bde926, type: 3}
+  m_PrefabInstance: {fileID: 5795430605771153297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6334093056514979962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4377e9dd51af08a498dd661291bde926, type: 3}
