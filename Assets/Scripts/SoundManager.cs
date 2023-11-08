@@ -28,6 +28,9 @@ public class SoundManager : MonoBehaviour
         WallDetector.OnWallDetected += GameOver;
         WallDetector.OnWallDetected += Splat;
 
+        //Use this event to handle when the player passes the starting point
+        //StartingLineDetector.OnStartLinePassed += ...;
+
     }
 
     private void HandlePlayerFootstep()
