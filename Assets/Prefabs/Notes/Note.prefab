@@ -4887,8 +4887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf2395865e73714fa9374a009259a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteValue: 15
-  keyValue: 0
+  noteValue: 4
+  keyValue: 1
   materials:
   - {fileID: 2100000, guid: 014bc0c8c385a244ca2f393f5f802723, type: 2}
   - {fileID: 2100000, guid: e651b5165291b094c8f9d67fbab258ed, type: 2}
@@ -4914,7 +4914,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.95
+  m_Radius: 0.45
   m_Center: {x: 0, y: 0.69, z: 0}
 --- !u!1 &8014857906258772825
 GameObject:
