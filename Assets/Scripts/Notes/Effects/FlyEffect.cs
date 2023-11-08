@@ -13,8 +13,11 @@ public class FlyEffect : NoteEffect
     public override void Activate()
     {
         float xVelocity = targetBody.velocity.x;
+        float xOffset = transform.position.x - targetBody.transform.position.x;
 
-        Vector3 distance = destination.position - targetBody.transform.position;
+        Vector3 adjustedDestination = new Vector3(destination.position.x - xOffset, destination.position.y);
+
+        Vector3 distance = adjustedDestination - targetBody.transform.position;
         float yVelocity = xVelocity * (distance.y / distance.x);
         targetBody.velocity = new Vector3(xVelocity, yVelocity, 0);
 
