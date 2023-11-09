@@ -14,6 +14,7 @@ public class NoteCombo : MonoBehaviour
         Note.OnNoteCollected += Increment;
         Note.OnNoteMissed += ResetCount;
         GameManager.OnGameStarted += ResetCount;
+        BadInputDetector.OnBadInputDetected += ResetCount;
     }
 
     private void ResetCount()
@@ -37,5 +38,7 @@ public class NoteCombo : MonoBehaviour
     {
         Note.OnNoteCollected -= Increment;
         Note.OnNoteMissed -= ResetCount;
+        GameManager.OnGameStarted -= ResetCount;
+        BadInputDetector.OnBadInputDetected -= ResetCount;
     }
 }

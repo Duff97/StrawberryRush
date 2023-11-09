@@ -10,30 +10,35 @@ public class BadInputDetector : MonoBehaviour
 
     public static event Action OnBadInputDetected;
 
-    private int overlappingColliders = 0;
+    private bool noteDetected;
 
     private void Start()
     {
-        
+        Note.OnNoteCollected += ResetNoteDetected;
+        Note.OnNoteMissed += ResetNoteDetected;
     }
 
     private void Update()
     {
-        if (!Input.anyKeyDown) return;
+        if (!Input.anyKeyDown || noteDetected) return;
 
-        if (overlappingColliders == 0)
-            OnBadInputDetected?.Invoke();
+        Debug.Log("RESET");
+        OnBadInputDetected?.Invoke();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        overlappingColliders++;
+        Debug.Log("Trig enter");
+        noteDetected = true;
     }
 
-    private void OnTriggerExit(Collider other)
+    private void ResetNoteDetected(string note)
     {
-        if (overlappingColliders == 0) return;
+        noteDetected = false;
+    }
 
-        overlappingColliders--;
+    private void ResetNoteDetected()
+    {
+        noteDetected = false;
     }
 }

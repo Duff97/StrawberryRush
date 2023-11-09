@@ -148,7 +148,6 @@ GameObject:
   - component: {fileID: 5723558887049990072}
   - component: {fileID: 6116015617501032859}
   - component: {fileID: 5747418501633551373}
-  - component: {fileID: 1332855403673903139}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -277,19 +276,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.1
   m_Center: {x: 0.36, y: 0.24, z: 0}
---- !u!114 &1332855403673903139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7972228777032881758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d34af48341b5254da5e6a1f16645aba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectZone: {fileID: 2845059608243954938}
 --- !u!1 &8111904296700097974
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +288,8 @@ GameObject:
   - component: {fileID: 5046212622344870231}
   - component: {fileID: 8975972436729843719}
   - component: {fileID: 2845059608243954938}
-  m_Layer: 6
+  - component: {fileID: 5428179815124333400}
+  m_Layer: 11
   m_Name: CollectZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,6 +382,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.25
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5428179815124333400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8111904296700097974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d34af48341b5254da5e6a1f16645aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectZone: {fileID: 2845059608243954938}
 --- !u!1 &8176364816969499513
 GameObject:
   m_ObjectHideFlags: 0
