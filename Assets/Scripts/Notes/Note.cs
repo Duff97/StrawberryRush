@@ -18,6 +18,7 @@ public class Note : MonoBehaviour
     private KeyCode collectKey;
 
     public static event Action<string> OnNoteCollected;
+    public static event Action OnNoteMissed;
 
     private bool isCollectable = false;
     private NoteEffect effect;
@@ -32,9 +33,13 @@ public class Note : MonoBehaviour
 
     private void Update()
     {
-        if (!isCollectable || !Input.GetKeyDown(collectKey)) return;
+        if (!isCollectable) return;
 
-        Collect();
+        if (Input.GetKeyDown(collectKey))
+            Collect();
+        else if (Input.anyKeyDown)
+            OnNoteMissed?.Invoke();
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -45,6 +50,7 @@ public class Note : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         isCollectable = false;
+        OnNoteMissed?.Invoke();
     }
 
     private void Collect()
