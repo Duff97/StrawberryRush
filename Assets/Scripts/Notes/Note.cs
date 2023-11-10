@@ -11,6 +11,12 @@ public class Note : MonoBehaviour
 
     [SerializeField] private NoteValues noteValue;
     [SerializeField] private KeyValues keyValue;
+
+    [Header("Easy mode")]
+    [SerializeField] private bool overrideForEasyMode;
+    [SerializeField] private KeyValues easyKeyValue;
+
+    [Header("References")]
     [SerializeField] private Material[] materials;
     [SerializeField] private Renderer noteRenderer;
     [SerializeField] private TMP_Text textField;
@@ -27,8 +33,6 @@ public class Note : MonoBehaviour
     {
         GameManager.OnGameStarted += HandleGameStart;
         effect = GetComponent<NoteEffect>();
-        collectKey = KeyToKeyCode(keyValue.ToString());
-        SetNoteMaterial();
     }
 
     private void Update()
@@ -68,6 +72,11 @@ public class Note : MonoBehaviour
 
     private void HandleGameStart()
     {
+        if (overrideForEasyMode)
+            Debug.Log(GameDifficulty.Instance.easyModeActivated);
+        collectKey = KeyToKeyCode(GetKeyValue().ToString());
+
+        SetNoteMaterial();
         gameObject.SetActive(true);
     }
 
@@ -84,8 +93,13 @@ public class Note : MonoBehaviour
 
     private void SetNoteMaterial()
     {
-        noteRenderer.material = materials[(int)keyValue];
-        textField.text = keyValue.ToString();
+        noteRenderer.material = materials[(int)GetKeyValue()];
+        textField.text = GetKeyValue().ToString();
+    }
+
+    private KeyValues GetKeyValue()
+    {
+        return (GameDifficulty.Instance.easyModeActivated && overrideForEasyMode) ? easyKeyValue : keyValue;
     }
 
     private void OnDestroy()

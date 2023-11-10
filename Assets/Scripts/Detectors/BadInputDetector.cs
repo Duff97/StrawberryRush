@@ -22,13 +22,11 @@ public class BadInputDetector : MonoBehaviour
     {
         if (!Input.anyKeyDown || noteDetected) return;
 
-        Debug.Log("RESET");
         OnBadInputDetected?.Invoke();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trig enter");
         noteDetected = true;
     }
 
