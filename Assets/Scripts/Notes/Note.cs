@@ -72,8 +72,6 @@ public class Note : MonoBehaviour
 
     private void HandleGameStart()
     {
-        if (overrideForEasyMode)
-            Debug.Log(GameDifficulty.Instance.easyModeActivated);
         collectKey = KeyToKeyCode(GetKeyValue().ToString());
 
         SetNoteMaterial();
