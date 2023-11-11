@@ -3849,6 +3849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7743889183259812200, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7767954573781105908, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -7738,6 +7742,7 @@ GameObject:
   - component: {fileID: 1154318910}
   - component: {fileID: 1154318908}
   - component: {fileID: 1154318912}
+  - component: {fileID: 1154318913}
   m_Layer: 0
   m_Name: StartingLine
   m_TagString: Untagged
@@ -7805,6 +7810,18 @@ MonoBehaviour:
   Parameter: Game State
   TriggerEvent: 3
   Value: 1
+--- !u!114 &1154318913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154318907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b6edd1b0af5884e8b56f6c06ad9da0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1157499299
 PrefabInstance:
   m_ObjectHideFlags: 0
