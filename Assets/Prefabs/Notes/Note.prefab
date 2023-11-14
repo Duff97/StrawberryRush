@@ -4890,10 +4890,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteValue: 4
   keyValue: 1
+  overrideForEasyMode: 0
+  easyKeyValue: 0
   materials:
   - {fileID: 2100000, guid: 014bc0c8c385a244ca2f393f5f802723, type: 2}
   - {fileID: 2100000, guid: e651b5165291b094c8f9d67fbab258ed, type: 2}
   - {fileID: 2100000, guid: 40964a8e79118674e91d806e3d149583, type: 2}
+  - {fileID: 2100000, guid: 5ab1b88523dbf2a4ea440e8fdfda8a5f, type: 2}
   noteRenderer: {fileID: 5164525755799438101}
   textField: {fileID: 7555050645594076834}
 --- !u!135 &1128543563472808757
