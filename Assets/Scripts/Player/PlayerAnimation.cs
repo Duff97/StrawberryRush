@@ -13,6 +13,8 @@ public class PlayerAnimation : MonoBehaviour
         JumpEffect.OnActivated += HandlePlayerJump;
         FlyEffect.OnActivated += HandleFlightStart;
         FlyEffect.OnDeactivated += HandleFlightEnd;
+        FinishLineDetector.OnFinishLinePassed += HandleFinishLinePassed;
+        GameManager.OnGameStarted += HandleGameStart;
     }
 
     private void FixedUpdate()
@@ -36,11 +38,23 @@ public class PlayerAnimation : MonoBehaviour
         animator.SetBool("IsFlying", false);
     }
 
+    private void HandleFinishLinePassed()
+    {
+        animator.SetBool("IsIdle", true);
+        animator.SetTrigger("Celebrate");
+    }
+
+    private void HandleGameStart()
+    {
+        animator.SetBool("IsIdle", false);
+    }
+
     private void OnDestroy()
     {
         JumpEffect.OnActivated -= HandlePlayerJump;
         FlyEffect.OnActivated -= HandleFlightStart;
         FlyEffect.OnDeactivated -= HandleFlightEnd;
+        FinishLineDetector.OnFinishLinePassed -= HandleFinishLinePassed;
     }
 
 }
