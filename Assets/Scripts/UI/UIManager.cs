@@ -1,44 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private GameObject menuPanel;
     [SerializeField] private GameObject gamePanel;
-    [SerializeField] private GameObject winPanel;
+    [SerializeField] private GameObject endGamePanel;
 
     // Start is called before the first frame update
     void Start()
     {
         GameManager.OnGameStarted += HandleGameStart;
         GameManager.OnGameFinished += HandleGameEnd;
-        FinishLineDetector.OnFinishLinePassed += HandleFinishLinePassed;
+        FinishLineDetector.OnFinishLinePassed += HandlePreGameEnd;
+        PlayerDeath.OnPlayerDeath += HandlePreGameEnd;
     }
 
     private void HandleGameStart()
     {
         menuPanel.SetActive(false);
         gamePanel.SetActive(true);
-        winPanel.SetActive(false);
+        endGamePanel.SetActive(false);
     }
 
     private void HandleGameEnd()
     {
         menuPanel.SetActive(true);
         gamePanel.SetActive(false);
-        winPanel.SetActive(false);
+        endGamePanel.SetActive(false);
     }
 
-    private void HandleFinishLinePassed()
+    private void HandlePreGameEnd()
     {
-        winPanel.SetActive(true);
+        endGamePanel.SetActive(true);
     }
 
     private void OnDestroy()
     {
         GameManager.OnGameStarted -= HandleGameStart;
         GameManager.OnGameFinished -= HandleGameEnd;
-        FinishLineDetector.OnFinishLinePassed -= HandleFinishLinePassed;
+        FinishLineDetector.OnFinishLinePassed -= HandlePreGameEnd;
+        FallDetector.OnFallDetected += HandlePreGameEnd;
     }
 }

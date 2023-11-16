@@ -20,8 +20,8 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         startPosition = transform.position;
         GameManager.OnGameStarted += HandleGameStarted;
-        GameManager.OnGameFinished += HandleGameFinished;
         FinishLineDetector.OnFinishLinePassed += HandleGameFinished;
+        PlayerDeath.OnPlayerDeath += HandleGameFinished;
         GroundDetector.OnGroundEntered += HandleGroundEntered;
         GroundDetector.OnGroundExited += HandleGroundExited;
         FlyEffect.OnActivated += HandleFlightStarted;
@@ -84,5 +84,7 @@ public class PlayerMovement : MonoBehaviour
         GroundDetector.OnGroundExited -= HandleGroundExited;
         FlyEffect.OnActivated -= HandleFlightStarted;
         FlyEffect.OnDeactivated -= HandleFlightExited;
+        FinishLineDetector.OnFinishLinePassed -= HandleGameFinished;
+        PlayerDeath.OnPlayerDeath -= HandleGameFinished;
     }
 }

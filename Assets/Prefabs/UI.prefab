@@ -5053,7 +5053,7 @@ GameObject:
   - component: {fileID: 4738638537354004266}
   - component: {fileID: 4612434889909280031}
   m_Layer: 5
-  m_Name: Win
+  m_Name: EndGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5810,7 +5810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPanel: {fileID: 5288473960064165285}
   gamePanel: {fileID: 2436339513507710125}
-  winPanel: {fileID: 1657216450401950778}
+  endGamePanel: {fileID: 1657216450401950778}
 --- !u!114 &5501564652820889837
 MonoBehaviour:
   m_ObjectHideFlags: 0

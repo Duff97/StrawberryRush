@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class WallDetector : MonoBehaviour
 {
+
     public static event Action OnWallDetected;
 
     private void OnTriggerEnter(Collider other)
