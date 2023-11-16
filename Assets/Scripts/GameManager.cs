@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
     {
         FallDetector.OnFallDetected += EndGame;
         WallDetector.OnWallDetected += EndGame;
-        FinishLineDetector.OnFinishLinePassed += EndGame;
     }
 
     public void StartGame()

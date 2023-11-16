@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
         startPosition = transform.position;
         GameManager.OnGameStarted += HandleGameStarted;
         GameManager.OnGameFinished += HandleGameFinished;
+        FinishLineDetector.OnFinishLinePassed += HandleGameFinished;
         GroundDetector.OnGroundEntered += HandleGroundEntered;
         GroundDetector.OnGroundExited += HandleGroundExited;
         FlyEffect.OnActivated += HandleFlightStarted;
