@@ -642,17 +642,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1545304940}
     m_Modifications:
-    - target: {fileID: 881609375233184801, guid: b861d8761239d3540b70beeddee3be56, type: 3}
-      propertyPath: m_text
-      value: Duff
-      objectReference: {fileID: 0}
     - target: {fileID: 3158668276956482398, guid: b861d8761239d3540b70beeddee3be56, type: 3}
       propertyPath: m_Name
       value: Duff
-      objectReference: {fileID: 0}
-    - target: {fileID: 6353370060304808820, guid: b861d8761239d3540b70beeddee3be56, type: 3}
-      propertyPath: m_text
-      value: UI designer / Artist / Programmer
       objectReference: {fileID: 0}
     - target: {fileID: 9005369400696622423, guid: b861d8761239d3540b70beeddee3be56, type: 3}
       propertyPath: m_Pivot.x
@@ -734,10 +726,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9100373710859482040, guid: b861d8761239d3540b70beeddee3be56, type: 3}
-      propertyPath: link
-      value: https://duff97.itch.io/
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -798,7 +786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 1.4
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -1235,7 +1223,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -30, y: -40}
-  m_SizeDelta: {x: 75, y: 75}
+  m_SizeDelta: {x: 81.86275, y: 50}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1775392804
 MonoBehaviour:
@@ -1321,7 +1309,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 1
+  m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1775392806
 CanvasRenderer:
@@ -1495,6 +1483,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1545304940}
     m_Modifications:
+    - target: {fileID: 1481824068682988812, guid: b861d8761239d3540b70beeddee3be56, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -30
+      objectReference: {fileID: 0}
     - target: {fileID: 1481824068682988812, guid: b861d8761239d3540b70beeddee3be56, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 40
