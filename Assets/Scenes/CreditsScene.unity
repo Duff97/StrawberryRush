@@ -1483,6 +1483,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1545304940}
     m_Modifications:
+    - target: {fileID: 881609375233184801, guid: b861d8761239d3540b70beeddee3be56, type: 3}
+      propertyPath: m_text
+      value: Garsche
+      objectReference: {fileID: 0}
     - target: {fileID: 1481824068682988812, guid: b861d8761239d3540b70beeddee3be56, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -30
@@ -1493,7 +1497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3158668276956482398, guid: b861d8761239d3540b70beeddee3be56, type: 3}
       propertyPath: m_Name
-      value: Garshe
+      value: Garsche
       objectReference: {fileID: 0}
     - target: {fileID: 6353370060304808820, guid: b861d8761239d3540b70beeddee3be56, type: 3}
       propertyPath: m_text

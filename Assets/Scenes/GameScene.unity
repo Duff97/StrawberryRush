@@ -4731,6 +4731,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 497798039478844309, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: TriggerEvent
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 819038873910736537, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: TriggerEvent
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 2110243351814808177, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4811,6 +4819,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2705914130788502630, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705914130788502630, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: TriggerEvent
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 2959555858702680659, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
       propertyPath: m_Name
       value: UI
@@ -4830,6 +4846,10 @@ PrefabInstance:
     - target: {fileID: 7349010378170653079, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: StartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7652504907218753861, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: TriggerEvent
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 7743889183259812200, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
       propertyPath: m_Enabled
@@ -4927,10 +4947,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7536874960641210110, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1799001313972107368, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1659381100}
   m_SourcePrefab: {fileID: 100100000, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
 --- !u!1001 &614786289
 PrefabInstance:
@@ -6271,6 +6295,14 @@ PrefabInstance:
     - target: {fileID: 3215309938081177839, guid: 1b332da7604fa1c429ba9a1ef7050854, type: 3}
       propertyPath: m_Name
       value: Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238175840653546272, guid: 1b332da7604fa1c429ba9a1ef7050854, type: 3}
+      propertyPath: StopEvent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238175840653546272, guid: 1b332da7604fa1c429ba9a1ef7050854, type: 3}
+      propertyPath: TriggerOnce
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12631,6 +12663,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4163190542877510540, guid: 4a89315ac57b40c46866afae3101f518, type: 3}
   m_PrefabInstance: {fileID: 770206793}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1659381098 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1799001313972107368, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+  m_PrefabInstance: {fileID: 614117312}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1659381100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659381098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Game State
+  TriggerEvent: 1
+  Value: 0
 --- !u!1001 &1664071949
 PrefabInstance:
   m_ObjectHideFlags: 0
