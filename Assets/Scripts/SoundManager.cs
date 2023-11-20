@@ -25,6 +25,7 @@ public class SoundManager : MonoBehaviour
         PlayerFootstep.OnFootstep += HandlePlayerFootstep;
         Note.OnNoteCollected += HandleNoteCollected;
         FallDetector.OnFallDetected += GameOver;
+        FallDetector.OnFallDetected += Splat;
         WallDetector.OnWallDetected += GameOver;
         WallDetector.OnWallDetected += Splat;
 
