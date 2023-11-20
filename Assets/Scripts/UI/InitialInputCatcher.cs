@@ -5,14 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class InitialInputCatcher : MonoBehaviour
 {
-    [SerializeField] private GameObject mainMenu;
+    [SerializeField] private string scene;
 
     private void OnGUI()
     {
         if (!Input.GetMouseButton(0) && !Input.GetMouseButton(1)) return;
 
-        mainMenu.SetActive(true);
-
-        Destroy(gameObject);
+        SceneManager.LoadScene(scene);
     }
 }
