@@ -20,5 +20,11 @@ public class PlayerDeath : MonoBehaviour
         OnPlayerDeath?.Invoke();
     }
 
+    private void OnDestroy()
+    {
+        WallDetector.OnWallDetected -= TriggerDeath;
+        FallDetector.OnFallDetected -= TriggerDeath;
+    }
+
 
 }

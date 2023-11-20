@@ -55,6 +55,7 @@ public class PlayerAnimation : MonoBehaviour
         FlyEffect.OnActivated -= HandleFlightStart;
         FlyEffect.OnDeactivated -= HandleFlightEnd;
         FinishLineDetector.OnFinishLinePassed -= HandleFinishLinePassed;
+        GameManager.OnGameStarted -= HandleGameStart;
     }
 
 }

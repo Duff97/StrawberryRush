@@ -79,12 +79,11 @@ public class PlayerMovement : MonoBehaviour
     private void OnDestroy()
     {
         GameManager.OnGameStarted -= HandleGameStarted;
-        GameManager.OnGameStarted -= HandleGameFinished;
+        FinishLineDetector.OnFinishLinePassed -= HandleGameFinished;
+        PlayerDeath.OnPlayerDeath -= HandleGameFinished;
         GroundDetector.OnGroundEntered -= HandleGroundEntered;
         GroundDetector.OnGroundExited -= HandleGroundExited;
         FlyEffect.OnActivated -= HandleFlightStarted;
         FlyEffect.OnDeactivated -= HandleFlightExited;
-        FinishLineDetector.OnFinishLinePassed -= HandleGameFinished;
-        PlayerDeath.OnPlayerDeath -= HandleGameFinished;
     }
 }

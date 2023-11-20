@@ -39,4 +39,10 @@ public class BadInputDetector : MonoBehaviour
     {
         noteDetected = false;
     }
+
+    private void OnDestroy()
+    {
+        Note.OnNoteCollected -= ResetNoteDetected;
+        Note.OnNoteMissed -= ResetNoteDetected;
+    }
 }

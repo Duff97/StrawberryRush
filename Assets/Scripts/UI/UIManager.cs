@@ -39,6 +39,6 @@ public class UIManager : MonoBehaviour
         GameManager.OnGameStarted -= HandleGameStart;
         GameManager.OnGameFinished -= HandleGameEnd;
         FinishLineDetector.OnFinishLinePassed -= HandlePreGameEnd;
-        FallDetector.OnFallDetected += HandlePreGameEnd;
+        PlayerDeath.OnPlayerDeath -= HandlePreGameEnd;
     }
 }
