@@ -76,6 +76,11 @@ public class PlayerMovement : MonoBehaviour
         adjustVelocity = true;
     }
 
+    public float GetVelocity() 
+    {
+        return velocity;
+    }
+
     private void OnDestroy()
     {
         GameManager.OnGameStarted -= HandleGameStarted;
