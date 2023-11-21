@@ -4851,6 +4851,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2481064054941879032, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2705914130788502630, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
       propertyPath: Value
       value: 0
@@ -4863,6 +4867,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 3010392624384580020, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625113938748466446, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5051952768035939076, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4870,6 +4882,18 @@ PrefabInstance:
     - target: {fileID: 5051952768035939076, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EndGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475074417796434811, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857896057579459053, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7215201673804321790, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7349010378170653079, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4885,7 +4909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7743889183259812200, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7767954573781105908, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -4978,6 +5002,14 @@ PrefabInstance:
     - target: {fileID: 7799319649082956124, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067459869859626379, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120275165028256104, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7536874960641210110, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
@@ -9471,6 +9503,7 @@ GameObject:
   - component: {fileID: 1154318908}
   - component: {fileID: 1154318912}
   - component: {fileID: 1154318913}
+  - component: {fileID: 1154318914}
   m_Layer: 0
   m_Name: StartingLine
   m_TagString: Untagged
@@ -9548,6 +9581,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3b6edd1b0af5884e8b56f6c06ad9da0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1154318914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154318907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f58cf66367dd82e4ea92a44bf4e48c16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1157499299
