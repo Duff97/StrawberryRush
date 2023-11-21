@@ -9,7 +9,7 @@ public class Configuration
     private static Configuration instance;
 
     public bool initialInput = false;
-    public float latency = 0;
+    public float latency = 3;
 
     public static Configuration Instance
     {

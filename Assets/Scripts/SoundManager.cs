@@ -6,6 +6,9 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
 
+    FMOD.Studio.Bus Master;
+    float MasterVolume = 1f;
+    
     private const string noteValueTmp = "[noteValue]";
 
     //Contains every FMOD events, makes it easier to manage when this script gets bigger
@@ -17,7 +20,21 @@ public class SoundManager : MonoBehaviour
         {"Splat", "event:/SFX/Splat"}
     };
 
-    
+    private void Awake()
+    {
+        Master = FMODUnity.RuntimeManager.GetBus("bus:/");
+    }
+
+    private void Update()
+    {
+        Master.setVolume(MasterVolume);
+    }
+
+    public void MasterVolumeLevel(float newMasterVolume)
+    {
+        MasterVolume = newMasterVolume;
+    }
+
     private void Start()
     {
         //Bind functions to game events 
