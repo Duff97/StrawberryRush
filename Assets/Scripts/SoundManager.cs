@@ -7,7 +7,6 @@ public class SoundManager : MonoBehaviour
 {
 
     FMOD.Studio.Bus Master;
-    float MasterVolume = 1f;
     
     private const string noteValueTmp = "[noteValue]";
 
@@ -23,16 +22,12 @@ public class SoundManager : MonoBehaviour
     private void Awake()
     {
         Master = FMODUnity.RuntimeManager.GetBus("bus:/");
-    }
-
-    private void Update()
-    {
-        Master.setVolume(MasterVolume);
+        Master.setVolume(1f);
     }
 
     public void MasterVolumeLevel(float newMasterVolume)
     {
-        MasterVolume = newMasterVolume;
+        Master.setVolume(newMasterVolume);
     }
 
     private void Start()
