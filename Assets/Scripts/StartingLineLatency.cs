@@ -13,25 +13,19 @@ public class StartingLineLatency : MonoBehaviour
         velocity = FindAnyObjectByType<PlayerMovement>().GetVelocity();
         initialPosition = transform.position;
         GameManager.OnGameStarted += HandleGameStart;
-        GameManager.OnGameFinished += HandleGameEnd;
     }
 
     private void HandleGameStart()
     {
+        transform.position = initialPosition;
         float latency = Configuration.Instance.latency;
         float distance = (latency / 1000) * velocity;
         transform.Translate(new Vector3(-distance, 0));
     }
 
-    private void HandleGameEnd()
-    {
-        transform.position = initialPosition;
-    }
-
     private void OnDestroy()
     {
         GameManager.OnGameStarted -= HandleGameStart;
-        GameManager.OnGameFinished -= HandleGameEnd;
     }
 
 
