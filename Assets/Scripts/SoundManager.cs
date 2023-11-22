@@ -19,17 +19,6 @@ public class SoundManager : MonoBehaviour
         {"Splat", "event:/SFX/Splat"}
     };
 
-    private void Awake()
-    {
-        Master = FMODUnity.RuntimeManager.GetBus("bus:/");
-        Master.setVolume(1f);
-    }
-
-    public void MasterVolumeLevel(float newMasterVolume)
-    {
-        Master.setVolume(newMasterVolume);
-    }
-
     private void Start()
     {
         //Bind functions to game events 
@@ -40,7 +29,13 @@ public class SoundManager : MonoBehaviour
         FallDetector.OnFallDetected += Splat;
         WallDetector.OnWallDetected += GameOver;
         WallDetector.OnWallDetected += Splat;
+        Master = FMODUnity.RuntimeManager.GetBus("bus:/");
+        Master.setVolume(1f);
+    }
 
+    public void MasterVolumeLevel(float newMasterVolume)
+    {
+        Master.setVolume(newMasterVolume);
     }
 
     private void HandlePlayerFootstep()
