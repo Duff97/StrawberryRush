@@ -11,6 +11,7 @@ public class Note : MonoBehaviour
 
     [SerializeField] private NoteValues noteValue;
     [SerializeField] private KeyValues keyValue;
+    [SerializeField] private float AutoCollectHitBoxOffset;
 
     [Header("Easy mode")]
     [SerializeField] private bool overrideForEasyMode;
@@ -20,6 +21,7 @@ public class Note : MonoBehaviour
     [SerializeField] private Material[] materials;
     [SerializeField] private Renderer noteRenderer;
     [SerializeField] private TMP_Text textField;
+    [SerializeField] private BoxCollider hitbox;
 
     private KeyCode collectKey;
 
@@ -76,6 +78,7 @@ public class Note : MonoBehaviour
     private void HandleGameStart()
     {
         collectKey = KeyToKeyCode(GetKeyValue().ToString());
+        hitbox.center = new Vector3(GetKeyValue() == KeyValues.AUTO ? AutoCollectHitBoxOffset : 0, 0);
 
         SetNoteMaterial();
         gameObject.SetActive(true);

@@ -4841,7 +4841,6 @@ GameObject:
   - component: {fileID: 9029355395975110700}
   - component: {fileID: 1289130098689073063}
   - component: {fileID: 5489810054412102826}
-  - component: {fileID: 1128543563472808757}
   - component: {fileID: 41063759452050369}
   m_Layer: 8
   m_Name: Note
@@ -4890,6 +4889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteValue: 4
   keyValue: 1
+  AutoCollectHitBoxOffset: 1
   overrideForEasyMode: 0
   easyKeyValue: 0
   materials:
@@ -4899,27 +4899,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 5ab1b88523dbf2a4ea440e8fdfda8a5f, type: 2}
   noteRenderer: {fileID: 5164525755799438101}
   textField: {fileID: 7555050645594076834}
---- !u!135 &1128543563472808757
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1302530424039689907}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Radius: 0.45
-  m_Center: {x: 0, y: 0.69, z: 0}
+  hitbox: {fileID: 41063759452050369}
 --- !u!65 &41063759452050369
 BoxCollider:
   m_ObjectHideFlags: 0
