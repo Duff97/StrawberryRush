@@ -29,8 +29,14 @@ public class SoundManager : MonoBehaviour
         FallDetector.OnFallDetected += Splat;
         WallDetector.OnWallDetected += GameOver;
         WallDetector.OnWallDetected += Splat;
+        GameManager.OnGameStarted += StartGame;
         Master = FMODUnity.RuntimeManager.GetBus("bus:/");
         Master.setVolume(1f);
+    }
+
+    public void StartGame()
+    {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Game State", 1);
     }
 
     public void MasterVolumeLevel(float newMasterVolume)
