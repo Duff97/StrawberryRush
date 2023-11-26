@@ -12,6 +12,7 @@ public class Note : MonoBehaviour
     [SerializeField] private NoteValues noteValue;
     [SerializeField] private KeyValues keyValue;
     [SerializeField] private float AutoCollectHitBoxOffset;
+    [SerializeField] private bool optional;
 
     [Header("Easy mode")]
     [SerializeField] private bool overrideForEasyMode;
@@ -27,6 +28,7 @@ public class Note : MonoBehaviour
 
     public static event Action<string> OnNoteCollected;
     public static event Action OnNoteMissed;
+    public static event Action OnOptionalNoteMissed;
 
     private bool isCollectable = false;
     private NoteEffect effect;
@@ -45,7 +47,6 @@ public class Note : MonoBehaviour
             Collect();
         else if (Input.anyKeyDown)
             OnNoteMissed?.Invoke();
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -59,7 +60,11 @@ public class Note : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         isCollectable = false;
-        OnNoteMissed?.Invoke();
+
+        if (optional)
+            OnOptionalNoteMissed?.Invoke();
+        else
+            OnNoteMissed?.Invoke();
     }
 
     private void Collect()

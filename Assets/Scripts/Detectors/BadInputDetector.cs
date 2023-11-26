@@ -16,6 +16,7 @@ public class BadInputDetector : MonoBehaviour
     {
         Note.OnNoteCollected += ResetNoteDetected;
         Note.OnNoteMissed += ResetNoteDetected;
+        Note.OnOptionalNoteMissed += ResetNoteDetected;
     }
 
     private void Update()
@@ -44,5 +45,6 @@ public class BadInputDetector : MonoBehaviour
     {
         Note.OnNoteCollected -= ResetNoteDetected;
         Note.OnNoteMissed -= ResetNoteDetected;
+        Note.OnOptionalNoteMissed -= ResetNoteDetected;
     }
 }

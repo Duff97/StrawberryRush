@@ -17,6 +17,8 @@ public class NoteCombo : MonoBehaviour
         BadInputDetector.OnBadInputDetected += ResetCount;
     }
 
+
+
     private void ResetCount()
     {
         currentCombo = 0;
