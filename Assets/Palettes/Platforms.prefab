@@ -256,6 +256,10 @@ PrefabInstance:
       propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5426134973228502533, guid: 1ad189b65a7a25d458d3ecc9ab9bee10, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5596076569897324582, guid: 1ad189b65a7a25d458d3ecc9ab9bee10, type: 3}
       propertyPath: m_Name
       value: Platform2Strawberry
@@ -324,6 +328,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5426134973228502533, guid: a7ac1f03c91083a4fad25361c44f32ec, type: 3}
       propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426134973228502533, guid: a7ac1f03c91083a4fad25361c44f32ec, type: 3}
+      propertyPath: m_LightProbeUsage
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5596076569897324582, guid: a7ac1f03c91083a4fad25361c44f32ec, type: 3}
@@ -396,6 +404,10 @@ PrefabInstance:
       propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5426134973228502533, guid: e92dc9357d05fbd48ab6de040b3e6034, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5596076569897324582, guid: e92dc9357d05fbd48ab6de040b3e6034, type: 3}
       propertyPath: m_Name
       value: Platform2Melon
@@ -466,6 +478,10 @@ PrefabInstance:
       propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5426134973228502533, guid: 53d0ec0ab4260c44cad3b68ff7ee8244, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5596076569897324582, guid: 53d0ec0ab4260c44cad3b68ff7ee8244, type: 3}
       propertyPath: m_Name
       value: Platform2Orange
@@ -524,7 +540,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6289188831402736963, guid: 53d0ec0ab4260c44cad3b68ff7ee8244, type: 3}
   m_PrefabInstance: {fileID: 7502848107407184849}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1033902378933695497
+--- !u!114 &8262809800869878839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
