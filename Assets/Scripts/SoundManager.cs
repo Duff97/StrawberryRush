@@ -95,8 +95,12 @@ public class SoundManager : MonoBehaviour
         PlayerFootstep.OnFootstep -= HandlePlayerFootstep;
         Note.OnNoteCollected -= HandleNoteCollected;
         FallDetector.OnFallDetected -= GameOver;
+        FallDetector.OnFallDetected -= Splat;
         WallDetector.OnWallDetected -= GameOver;
         WallDetector.OnWallDetected -= Splat;
+        GameManager.OnGameStarted -= StartGame;
+        Note.OnNoteMissed -= BadInput;
+        FlyEffect.OnActivated -= Fly;
     }
 
 
