@@ -13282,6 +13282,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1799001313972107368, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1659381100}
+    - targetCorrespondingSourceObject: {fileID: 5694407012202675680, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1416303934}
   m_SourcePrefab: {fileID: 100100000, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
 --- !u!1001 &614786289
 PrefabInstance:
@@ -30119,6 +30122,42 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a89315ac57b40c46866afae3101f518, type: 3}
+--- !u!1 &1416303929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5694407012202675680, guid: 7cbc40c8d2088e84ca0169f21503df40, type: 3}
+  m_PrefabInstance: {fileID: 614117312}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1416303934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416303929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 195076650
+      Data2: 1078320167
+      Data3: 1897693363
+      Data4: -587497447
+    Path: event:/UI/Click
+  Event: 
+  PlayEvent: 19
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1419883519
 PrefabInstance:
   m_ObjectHideFlags: 0

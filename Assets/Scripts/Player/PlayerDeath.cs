@@ -11,6 +11,7 @@ public class PlayerDeath : MonoBehaviour
     private bool suicideActive = false;
 
     public static event Action OnPlayerDeath;
+    public static event Action OnPlayerSuicide;
 
     private void Start()
     {
@@ -27,6 +28,7 @@ public class PlayerDeath : MonoBehaviour
         if (Input.GetKeyDown(suicideKey))
         {
             TriggerDeath();
+            OnPlayerDeath?.Invoke();
         }
     }
     private void TriggerDeath()

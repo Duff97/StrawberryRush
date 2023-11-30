@@ -28,10 +28,8 @@ public class SoundManager : MonoBehaviour
         JumpEffect.OnActivated += HandleJumpEffect;
         PlayerFootstep.OnFootstep += HandlePlayerFootstep;
         Note.OnNoteCollected += HandleNoteCollected;
-        FallDetector.OnFallDetected += GameOver;
-        FallDetector.OnFallDetected += Splat;
-        WallDetector.OnWallDetected += GameOver;
-        WallDetector.OnWallDetected += Splat;
+        PlayerDeath.OnPlayerDeath += GameOver;
+
         GameManager.OnGameStarted += StartGame;
         Note.OnNoteMissed += BadInput;
         FlyEffect.OnActivated += Fly;
@@ -71,10 +69,6 @@ public class SoundManager : MonoBehaviour
     private void GameOver()
     {
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Game State", 2);
-    }
-
-    private void Splat()
-    {
         FMODUnity.RuntimeManager.PlayOneShot(FMODEvents["Splat"]);
     }
 
@@ -95,9 +89,7 @@ public class SoundManager : MonoBehaviour
         PlayerFootstep.OnFootstep -= HandlePlayerFootstep;
         Note.OnNoteCollected -= HandleNoteCollected;
         FallDetector.OnFallDetected -= GameOver;
-        FallDetector.OnFallDetected -= Splat;
         WallDetector.OnWallDetected -= GameOver;
-        WallDetector.OnWallDetected -= Splat;
         GameManager.OnGameStarted -= StartGame;
         Note.OnNoteMissed -= BadInput;
         FlyEffect.OnActivated -= Fly;
