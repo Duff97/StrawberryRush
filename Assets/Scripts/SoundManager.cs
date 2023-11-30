@@ -29,10 +29,10 @@ public class SoundManager : MonoBehaviour
         PlayerFootstep.OnFootstep += HandlePlayerFootstep;
         Note.OnNoteCollected += HandleNoteCollected;
         PlayerDeath.OnPlayerDeath += GameOver;
-
         GameManager.OnGameStarted += StartGame;
         Note.OnNoteMissed += BadInput;
         FlyEffect.OnActivated += Fly;
+
         Master = FMODUnity.RuntimeManager.GetBus("bus:/");
         Master.setVolume(1f);
 
@@ -88,8 +88,7 @@ public class SoundManager : MonoBehaviour
         JumpEffect.OnActivated -= HandleJumpEffect;
         PlayerFootstep.OnFootstep -= HandlePlayerFootstep;
         Note.OnNoteCollected -= HandleNoteCollected;
-        FallDetector.OnFallDetected -= GameOver;
-        WallDetector.OnWallDetected -= GameOver;
+        PlayerDeath.OnPlayerDeath -= GameOver;
         GameManager.OnGameStarted -= StartGame;
         Note.OnNoteMissed -= BadInput;
         FlyEffect.OnActivated -= Fly;
