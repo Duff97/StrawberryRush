@@ -36,6 +36,7 @@ public class Note : MonoBehaviour
     private void Start()
     {
         GameManager.OnGameStarted += HandleGameStart;
+        PlayerDeath.OnPlayerDeath += SetUnCollectable;
         effect = GetComponent<NoteEffect>();
     }
 
@@ -65,6 +66,11 @@ public class Note : MonoBehaviour
             OnOptionalNoteMissed?.Invoke();
         else
             OnNoteMissed?.Invoke();
+    }
+
+    private void SetUnCollectable()
+    {
+        isCollectable = false;
     }
 
     private void Collect()
@@ -114,5 +120,6 @@ public class Note : MonoBehaviour
     private void OnDestroy()
     {
         GameManager.OnGameStarted -= HandleGameStart;
+        PlayerDeath.OnPlayerDeath -= SetUnCollectable;
     }
 }
